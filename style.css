@@ -241,6 +241,142 @@ img { max-width: 100%; height: auto; display: block; }
 .sticker-card-frenchie { border-color: #c9b8a3; background: linear-gradient(180deg, #f5ede2 0%, #fff 50%); }
 .sticker-card-capybara { border-color: #b8d4a8; background: linear-gradient(180deg, #ecf5e3 0%, #fff 50%); }
 .sticker-card-tanuki { border-color: #d4a373; background: linear-gradient(180deg, #faedcd 0%, #fff 50%); }
+.sticker-card-shiba { border-color: #e9a87c; background: linear-gradient(180deg, #fdf0e1 0%, #fff 50%); }
+.sticker-card-maltese { border-color: #f4c2c2; background: linear-gradient(180deg, #fdebeb 0%, #fff 50%); }
+.sticker-card-chihuahua { border-color: #f0c674; background: linear-gradient(180deg, #fdf3dd 0%, #fff 50%); }
+.sticker-card-dachshund { border-color: #b08968; background: linear-gradient(180deg, #f0e3d4 0%, #fff 50%); }
+.sticker-card-sheltie { border-color: #c89f7f; background: linear-gradient(180deg, #f5e6d4 0%, #fff 50%); }
+.sticker-card-husky { border-color: #a8c5e0; background: linear-gradient(180deg, #e6f0fa 0%, #fff 50%); }
+.sticker-card-border { border-color: #9fb8a8; background: linear-gradient(180deg, #e8efe9 0%, #fff 50%); }
+.sticker-card-minpin { border-color: #8b6f47; background: linear-gradient(180deg, #efe5d4 0%, #fff 50%); }
+
+/* ===== 音楽セクション ===== */
+.music-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+  margin-top: 32px;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.music-card {
+  background: #fff;
+  border-radius: var(--radius-lg);
+  padding: 20px;
+  box-shadow: var(--shadow);
+  position: relative;
+  transition: transform 0.2s, box-shadow 0.2s;
+  border: 3px solid var(--cream-deep);
+}
+
+.music-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-hover);
+}
+
+.music-badge {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  background: #ff6b9d;
+  color: #fff;
+  font-size: 11px;
+  font-weight: 700;
+  padding: 4px 12px;
+  border-radius: 999px;
+  z-index: 2;
+}
+
+.music-badge-released {
+  background: #6bbf6b;
+}
+
+.music-thumb-wrap {
+  position: relative;
+  border-radius: 14px;
+  overflow: hidden;
+  margin-bottom: 14px;
+  background: #1a1a1a;
+}
+
+.music-thumb {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  display: block;
+}
+
+.music-play-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(0,0,0,0.7);
+  color: #fff;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 26px;
+  opacity: 0.85;
+  transition: opacity 0.2s, transform 0.2s;
+  padding-left: 6px;
+}
+
+.music-thumb-wrap:hover .music-play-icon {
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1.1);
+}
+
+.music-card h3 {
+  margin: 8px 0 4px;
+  font-size: 17px;
+  color: var(--brown);
+}
+
+.music-meta {
+  font-size: 12px;
+  color: var(--text-soft);
+  margin-bottom: 10px;
+  letter-spacing: 0.03em;
+}
+
+.music-desc {
+  font-size: 13px;
+  line-height: 1.7;
+  margin-bottom: 14px;
+  color: var(--text);
+}
+
+.music-link {
+  display: inline-block;
+  padding: 8px 18px;
+  background: var(--pink-deep);
+  color: #fff;
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.music-link:hover {
+  opacity: 1;
+  background: var(--brown);
+}
+
+.music-footer {
+  text-align: center;
+  margin-top: 36px;
+  font-size: 15px;
+}
+
+.music-footer a {
+  color: var(--pink-deep);
+  font-weight: 700;
+}
 
 .sticker-subtitle {
   text-align: center;
