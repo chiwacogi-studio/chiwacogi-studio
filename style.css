@@ -249,6 +249,7 @@ img { max-width: 100%; height: auto; display: block; }
 .sticker-card-husky { border-color: #a8c5e0; background: linear-gradient(180deg, #e6f0fa 0%, #fff 50%); }
 .sticker-card-border { border-color: #9fb8a8; background: linear-gradient(180deg, #e8efe9 0%, #fff 50%); }
 .sticker-card-minpin { border-color: #8b6f47; background: linear-gradient(180deg, #efe5d4 0%, #fff 50%); }
+.sticker-card-zodiac { border-color: #e8b4d1; background: linear-gradient(180deg, #fbe9f3 0%, #fff 50%); }
 
 /* ===== 音楽セクション ===== */
 .music-grid {
