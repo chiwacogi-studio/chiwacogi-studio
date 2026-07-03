@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>おばん菜 焼肉 みさご | 行ってきたシリーズ #02 - チワコギー工房</title>
+<meta name="description" content="石川県金沢市東力の「おばん菜 焼肉 みさご」で日替わりランチ「みさごはん定食」。小鉢いっぱい＋サーモン刺身で栄養満点。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;700;800&family=Zen+Kaku+Gothic+New:wght@500;700;900&display=swap" rel="stylesheet">
+<style>
+:root{
+  --accent:#c23b3b;       /* 朱印・のれんの赤 */
+  --accent-soft:#3a4a5c;  /* 藍色の淡いトーン(暗背景用) */
+  --bg:#1c2530;           /* 藍染め×夜の居酒屋の暗い背景 */
+  --bg-card:#26313f;
+  --ink:#f3ede2;          /* 生成り色の文字 */
+  --ink-dim:#b9c0c9;
+  --paper:#f6f1e7;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Zen Kaku Gothic New','Shippori Mincho',sans-serif;background:var(--bg);color:var(--ink);line-height:1.85}
+.wrap{max-width:880px;margin:0 auto;padding:0 22px}
+
+/* ===== hero: split型（左に縦書きの店名帯、右に写真） ===== */
+.hero{display:flex;min-height:520px}
+.hero-side{width:110px;flex-shrink:0;background:var(--accent);display:flex;align-items:center;justify-content:center;position:relative}
+.hero-side .vtitle{writing-mode:vertical-rl;font-family:'Shippori Mincho',serif;font-weight:800;font-size:1.9rem;letter-spacing:.25em;color:var(--paper)}
+.hero-side::after{content:"";position:absolute;bottom:14px;width:44px;height:44px;border:2px solid var(--paper);border-radius:6px;display:flex}
+.hero-photo{flex:1;position:relative;overflow:hidden}
+.hero-photo img{width:100%;height:100%;object-fit:cover;min-height:520px}
+.hero-overlay{position:absolute;inset:0;background:linear-gradient(to top,rgba(15,20,26,.88),rgba(15,20,26,.05) 55%);display:flex;align-items:flex-end}
+.hero-text{padding:34px 30px}
+.hero-badge{display:inline-block;background:var(--paper);color:var(--accent);border-radius:3px;padding:3px 14px;font-size:.78rem;font-weight:700;margin-bottom:12px;letter-spacing:.05em}
+.hero-text h1{font-family:'Shippori Mincho',serif;font-size:clamp(1.7rem,4.6vw,2.7rem);font-weight:800;color:var(--paper)}
+.hero-text p{margin-top:8px;font-size:1rem;color:var(--ink-dim)}
+
+section{padding:52px 0}
+h2{font-family:'Shippori Mincho',serif;font-size:1.4rem;font-weight:800;margin-bottom:26px;display:flex;align-items:center;gap:12px;color:var(--paper)}
+h2::before{content:"印";display:inline-flex;align-items:center;justify-content:center;width:30px;height:30px;background:var(--accent);color:var(--paper);font-size:.85rem;border-radius:4px;flex-shrink:0}
+
+/* rating: 朱印スタンプ風 */
+.rating-row{display:flex;flex-wrap:wrap;gap:16px}
+.rating-card{background:var(--bg-card);border-radius:10px;padding:18px 22px;flex:1;min-width:150px;text-align:center;border:1px solid #3a4656}
+.rating-card .label{font-size:.83rem;color:var(--ink-dim);margin-bottom:8px}
+.rating-card .stamp{display:inline-flex;align-items:center;justify-content:center;width:52px;height:52px;border:2.5px solid var(--accent);color:var(--accent);border-radius:50%;font-family:'Shippori Mincho',serif;font-weight:800;font-size:1.2rem;transform:rotate(-6deg)}
+
+/* gallery: 横スクロール・ポラロイド風 */
+.gallery-scroll{display:flex;gap:20px;overflow-x:auto;padding:10px 4px 20px;scroll-snap-type:x mandatory}
+.gallery-scroll::-webkit-scrollbar{height:6px}
+.gallery-scroll::-webkit-scrollbar-thumb{background:#3a4656;border-radius:3px}
+.polaroid{flex:0 0 260px;background:var(--paper);padding:12px 12px 20px;border-radius:2px;box-shadow:0 8px 20px rgba(0,0,0,.35);scroll-snap-align:start;transform:rotate(var(--r,-1.5deg))}
+.polaroid:nth-child(even){--r:1.5deg}
+.polaroid:nth-child(3n){--r:-2.5deg}
+.polaroid img{width:100%;aspect-ratio:4/3;object-fit:cover;display:block}
+.polaroid figcaption{padding-top:10px;font-size:.85rem;color:#4a4038;text-align:center}
+
+/* highlight */
+.highlight{background:var(--bg-card);border-radius:14px;padding:30px;border-left:4px solid var(--accent)}
+.highlight ul{list-style:none}
+.highlight li{padding:9px 0 9px 30px;position:relative;color:var(--ink)}
+.highlight li::before{content:"◎";position:absolute;left:0;color:var(--accent)}
+
+/* review */
+.review{background:var(--bg-card);border-radius:14px;padding:30px;position:relative;border:1px dashed #3a4656}
+.review::before{content:"「";position:absolute;top:-2px;left:16px;font-size:3.6rem;color:var(--accent);opacity:.5;font-family:'Shippori Mincho',serif}
+.review p{padding-top:14px}
+
+/* info table */
+.info-table{width:100%;background:var(--bg-card);border-radius:14px;overflow:hidden;border-collapse:collapse}
+.info-table th,.info-table td{padding:14px 18px;text-align:left;border-bottom:1px solid #3a4656;font-size:.94rem}
+.info-table th{width:30%;background:#212b37;font-weight:700;color:var(--ink-dim)}
+.info-table tr:last-child th,.info-table tr:last-child td{border-bottom:none}
+.info-table a{color:#e0836f;font-weight:700}
+.info-note{font-size:.8rem;color:var(--ink-dim);margin-top:10px}
+
+.map-btn{display:inline-block;margin-top:18px;background:var(--accent);color:var(--paper);font-weight:700;padding:12px 30px;border-radius:3px;text-decoration:none;letter-spacing:.03em}
+.map-btn:hover{opacity:.88}
+
+footer{background:#141a22;color:var(--ink-dim);text-align:center;padding:30px 20px;font-size:.85rem}
+footer a{color:#e0836f;text-decoration:none}
+</style>
+</head>
+<body>
+
+<div class="hero">
+  <div class="hero-side"><span class="vtitle">おばん菜焼肉みさご</span></div>
+  <div class="hero-photo">
+    <img src="../../images/odekake/misago-obanzai-yakiniku/IMG_4040.jpg" alt="みさごはん定食">
+    <div class="hero-overlay">
+      <div class="hero-text">
+        <span class="hero-badge">行ってきたシリーズ #02</span>
+        <h1>おばん菜 焼肉 みさご</h1>
+        <p>金沢・東力の日替わりランチ「みさごはん定食」。小鉢いっぱい＋サーモン刺身で栄養満点</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="wrap">
+
+<section>
+  <h2>ひとことで言うと</h2>
+  <div class="rating-row">
+    <div class="rating-card"><div class="label">ボリューム</div><div class="stamp">満足</div></div>
+    <div class="rating-card"><div class="label">栄養バランス</div><div class="stamp">満点</div></div>
+    <div class="rating-card"><div class="label">コスパ</div><div class="stamp">良</div></div>
+  </div>
+</section>
+
+<section>
+  <h2>フォトギャラリー</h2>
+  <div class="gallery-scroll">
+    <figure class="polaroid"><img src="../../images/odekake/misago-obanzai-yakiniku/IMG_4041.jpg" alt="みさごはん定食 全体" loading="lazy"><figcaption>ソースかつを中心に小鉢がずらり。サーモン刺身も付く豪華な定食</figcaption></figure>
+    <figure class="polaroid"><img src="../../images/odekake/misago-obanzai-yakiniku/IMG_4037.jpg" alt="みさごはんメニュー" loading="lazy"><figcaption>お昼の「みさごはん」は月・火・金11:00〜14:00限定</figcaption></figure>
+    <figure class="polaroid"><img src="../../images/odekake/misago-obanzai-yakiniku/IMG_4042.jpg" alt="お店のご挨拶" loading="lazy"><figcaption>夫婦で営むお店。片町から東力に移転してのスタート</figcaption></figure>
+    <figure class="polaroid"><img src="../../images/odekake/misago-obanzai-yakiniku/IMG_4043.jpg" alt="お店の入口" loading="lazy"><figcaption>のれんが目印の落ち着いた入口</figcaption></figure>
+    <figure class="polaroid"><img src="../../images/odekake/misago-obanzai-yakiniku/IMG_4044.jpg" alt="看板とのれん" loading="lazy"><figcaption>「本日のメイン」の貼り紙が日替わりランチの証</figcaption></figure>
+  </div>
+</section>
+
+<section>
+  <h2>ここがよかった</h2>
+  <div class="highlight">
+    <ul>
+      <li>ランチの定食は<strong>1種類だけ</strong>なのに、メインと小鉢がぎっしり並ぶボリューム</li>
+      <li><strong>サーモンのお刺身</strong>まで付いてきて、定食なのに贅沢な気分に</li>
+      <li>いろんな料理を少しずつ食べられるので<strong>栄養バランスも満点</strong></li>
+      <li>夫婦で営む温かい雰囲気。片町の「おばん菜 のん」から東力で新たにスタートしたお店</li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <h2>行ってきた感想</h2>
+  <div class="review">
+    <p>ランチの定食は「みさごはん定食」１種類のみですが、メインと小鉢がいっぱいでサーモンのお刺身まで付いていて大満足でした。いろんなお惣菜を少しずつ食べられるので栄養バランスも満点。日替わりのメインは訪問時は「ソースかつ」で、ボリュームもしっかり。ごちそうさまでした。</p>
+  </div>
+</section>
+
+<section>
+  <h2>スポット情報</h2>
+  <table class="info-table">
+    <tr><th>名前</th><td>おばん菜 焼肉 みさご</td></tr>
+    <tr><th>場所</th><td>〒921-8015 石川県金沢市東力４丁目69-1</td></tr>
+    <tr><th>ランチ営業</th><td>月・火・金 11:00〜14:00（L.O.13:30）／みさごはん定食 1,300円</td></tr>
+    <tr><th>定休日</th><td>水曜日</td></tr>
+    <tr><th>行った日</th><td>2026年6月26日（ランチ）</td></tr>
+    <tr><th>Instagram</th><td><a href="https://www.instagram.com/obyn335" target="_blank" rel="noopener">@obyn335</a></td></tr>
+    <tr><th>食べログ</th><td><a href="https://tabelog.com/ishikawa/A1701/A170101/17012019/" target="_blank" rel="noopener">おばん菜 焼肉 みさご（食べログ）</a></td></tr>
+  </table>
+  <p class="info-note">※営業時間・定休日は訪問時にお店で確認した情報です。お出かけ前に最新情報をご確認ください。</p>
+  <a class="map-btn" href="https://www.google.com/maps/search/?api=1&query=%E3%81%8A%E3%81%B0%E3%82%93%E8%8F%9C%20%E7%84%BC%E8%82%89%20%E3%81%BF%E3%81%95%E3%81%94%20%E9%87%91%E6%B2%A2%E5%B8%82%E6%9D%B1%E5%8A%9B" target="_blank" rel="noopener">📍 Googleマップで見る</a>
+</section>
+
+</div>
+
+<footer>
+  <p>このページは <a href="https://chiwacogi-studio.pages.dev/">チワコギー工房</a> の「行ってきたシリーズ」で勝手に作ったファンページです。<br>
+  掲載写真はすべて自分で撮影したものです。お店の公式ページではありません。</p>
+</footer>
+
+</body>
+</html>
