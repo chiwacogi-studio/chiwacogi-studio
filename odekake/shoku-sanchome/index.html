@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>お食事処 食３丁目 | 金沢市米泉町の定食屋 - チワコギー工房</title>
+<meta name="description" content="金沢市米泉町にひっそりと佇む定食屋「食３丁目」。おまかせ定食・おろしそばセットなど、素材にこだわった家庭の味をご紹介します。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Zen+Old+Mincho:wght@500;700;900&family=Noto+Sans+JP:wght@400;500;700;900&family=Klee+One:wght@600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --accent:#a8341e;
+  --accent-soft:#f3e3cf;
+  --bg:#faf3e6;
+  --ink:#3b2f26;
+  --card:#fffdf8;
+  --board:#20211f;
+  --chalk:#f5efe0;
+  --chalk-y:#e8d98a;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Noto Sans JP',sans-serif;background:var(--bg);color:var(--ink);line-height:1.85}
+.wrap{max-width:900px;margin:0 auto;padding:0 22px}
+h1,h2,h3{font-family:'Zen Old Mincho',serif}
+
+/* ===== hero ===== */
+.hero{position:relative;height:66vh;min-height:460px;overflow:hidden}
+.hero img{width:100%;height:100%;object-fit:cover;filter:saturate(1.05) contrast(1.02)}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(32,26,18,.15) 0%,rgba(32,26,18,.15) 40%,rgba(32,26,18,.82) 100%)}
+.hero-text{position:absolute;left:0;right:0;bottom:0;padding:44px 26px;color:#fff;text-align:center;z-index:2}
+.hero-mark{display:inline-flex;align-items:center;justify-content:center;width:64px;height:64px;border:3px solid #fff;border-radius:50%;font-family:'Zen Old Mincho',serif;font-size:1.9rem;font-weight:900;color:#fff;margin-bottom:14px}
+.hero-text h1{font-size:clamp(2.1rem,6vw,3.4rem);font-weight:900;letter-spacing:.06em;text-shadow:0 3px 16px rgba(0,0,0,.45)}
+.hero-text .kana{display:block;font-size:.9rem;letter-spacing:.3em;font-weight:500;opacity:.85;margin-top:6px}
+.hero-text p.copy{margin-top:14px;font-size:1.05rem;opacity:.95}
+
+/* ===== ribbon nav-ish label ===== */
+.section-tag{display:inline-block;background:var(--accent);color:#fff;font-size:.78rem;font-weight:700;letter-spacing:.15em;padding:5px 16px;border-radius:2px;margin-bottom:14px}
+section{padding:60px 0}
+h2.ttl{font-size:1.7rem;font-weight:900;margin-bottom:6px;color:var(--ink)}
+p.lead{color:#6b5c4d;margin-bottom:30px;font-size:.95rem}
+
+/* ===== concept ===== */
+.concept-body{font-size:1.02rem}
+.concept-body p{margin-bottom:18px}
+.kodawari{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:16px;margin-top:28px}
+.kodawari .item{background:var(--card);border:1px solid #ecdfc9;border-radius:10px;padding:20px;text-align:center}
+.kodawari .item .ico{font-size:1.7rem;margin-bottom:8px}
+.kodawari .item .ttl2{font-weight:700;margin-bottom:6px}
+.kodawari .item .txt{font-size:.86rem;color:#6b5c4d}
+
+/* ===== menu (chalkboard) ===== */
+.menu-wrap{background:var(--board);border-radius:14px;padding:42px 32px;position:relative;box-shadow:0 10px 30px rgba(0,0,0,.25)}
+.menu-wrap::before{content:"MENU";position:absolute;top:-16px;left:32px;background:var(--accent);color:#fff;font-family:'Zen Old Mincho',serif;font-size:.85rem;letter-spacing:.3em;padding:6px 18px;border-radius:2px}
+.menu-grid{display:grid;grid-template-columns:1fr 1fr;gap:34px}
+@media(max-width:680px){.menu-grid{grid-template-columns:1fr}}
+.menu-board h3{font-family:'Klee One',cursive;color:var(--chalk);font-size:1.5rem;margin-bottom:4px;border-bottom:2px dashed rgba(245,239,224,.3);padding-bottom:10px}
+.menu-board .price{color:var(--chalk-y);font-family:'Klee One',cursive;font-size:1.35rem;float:right}
+.menu-board ul{list-style:none;margin:16px 0 8px;color:var(--chalk);font-family:'Klee One',cursive;font-size:1.02rem}
+.menu-board ul li{padding:4px 0}
+.menu-board .note{color:#c9bfa8;font-size:.8rem;margin-top:10px;font-family:'Noto Sans JP',sans-serif}
+.menu-sub{margin-top:20px;padding-top:16px;border-top:2px dashed rgba(245,239,224,.3)}
+.menu-sub .row{display:flex;justify-content:space-between;gap:10px;color:var(--chalk);font-family:'Klee One',cursive;font-size:1rem;padding:4px 0}
+.menu-sub .row span:first-child{flex:1}
+.menu-sub .row .p{white-space:nowrap}
+.menu-sub .row .p{color:var(--chalk-y)}
+.drink-note{margin-top:26px;text-align:center;color:#c9bfa8;font-size:.88rem}
+.drink-note strong{color:var(--chalk)}
+
+/* ===== gallery ===== */
+.gallery{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:14px}
+.gallery figure{border-radius:10px;overflow:hidden;background:var(--card);box-shadow:0 4px 14px rgba(0,0,0,.08)}
+.gallery img{width:100%;aspect-ratio:4/3;object-fit:cover;display:block}
+.gallery figcaption{padding:9px 12px;font-size:.83rem;color:#6b5c4d}
+
+/* ===== info ===== */
+.info-table{width:100%;background:var(--card);border-radius:12px;overflow:hidden;box-shadow:0 4px 14px rgba(0,0,0,.06);border-collapse:collapse}
+.info-table th,.info-table td{padding:15px 18px;text-align:left;border-bottom:1px solid #ecdfc9;font-size:.95rem;vertical-align:top}
+.info-table th{width:30%;background:var(--accent-soft);font-weight:700;color:var(--ink)}
+.info-table tr:last-child th,.info-table tr:last-child td{border-bottom:none}
+.info-table a{color:var(--accent);font-weight:700;text-decoration:none}
+.map-btn{display:inline-block;margin-top:20px;background:var(--accent);color:#fff;font-weight:700;padding:13px 30px;border-radius:4px;text-decoration:none;letter-spacing:.05em}
+.map-btn:hover{opacity:.88}
+
+footer{background:var(--ink);color:#e7dcc9;text-align:center;padding:30px 20px;font-size:.8rem;line-height:1.7}
+footer a{color:#e8c8a8;text-decoration:none}
+</style>
+</head>
+<body>
+
+<div class="hero">
+  <img src="../../images/odekake/shoku-sanchome/p13_exterior.jpg" alt="食３丁目 外観">
+  <div class="hero-text">
+    <div class="hero-mark">食</div>
+    <h1>食３丁目<span class="kana">しょく さんちょうめ</span></h1>
+    <p class="copy">金沢市米泉町、路地にひっそり佇む定食屋</p>
+  </div>
+</div>
+
+<div class="wrap">
+
+<section>
+  <span class="section-tag">CONCEPT</span>
+  <h2 class="ttl">おかえりなさい、と言いたくなる食卓</h2>
+  <p class="lead">住宅街の一角、看板がなければ通り過ぎてしまいそうな場所に「食３丁目」はあります。</p>
+  <div class="concept-body">
+    <p>ここでいただけるのは、飾らない家庭の定食。小鉢がずらりと並ぶお膳に、揚げたてのメインとお刺身、炊きたてのご飯。品数の多さに反して、一つひとつはどこか懐かしく、身体にすっと馴染む味わいです。</p>
+    <p>使う調味料や飲み水にも、日々の食卓だからこそのこだわりを。派手さはなくとも、通うほどに落ち着く「隠れ家の定食屋」。それが食３丁目です。</p>
+  </div>
+  <div class="kodawari">
+    <div class="item"><div class="ico">💧</div><div class="ttl2">純水</div><div class="txt">赤ちゃんにも飲ませたい、そんな水を使用</div></div>
+    <div class="item"><div class="ico">🍯</div><div class="ttl2">きび砂糖</div><div class="txt">精製されすぎていない、やさしい甘み</div></div>
+    <div class="item"><div class="ico">🧂</div><div class="ttl2">天日塩・天然塩</div><div class="txt">素材の味を引き立てる塩選び</div></div>
+  </div>
+</section>
+
+<section>
+  <span class="section-tag">MENU</span>
+  <h2 class="ttl">お品書き</h2>
+  <p class="lead">ランチタイム限定、日替わりで内容が変わる定食2本立て。</p>
+
+  <div class="menu-wrap">
+    <div class="menu-grid">
+      <div class="menu-board">
+        <h3>おろしそばセット<span class="price">¥1,400</span></h3>
+        <p class="note">小鉢3品＋メイン（お好きな1品をお選びください）</p>
+        <ul>
+          <li>・エビフライ</li>
+          <li>・とりなんばん</li>
+          <li>・とんかつ</li>
+          <li>・ヒレカツ</li>
+          <li>・サワラフライ</li>
+          <li>・カレーコロッケ</li>
+        </ul>
+        <div class="menu-sub">
+          <div class="row"><span>おろしそば単品</span><span class="p">¥900</span></div>
+          <div class="row"><span>ライス単品</span><span class="p">¥100</span></div>
+        </div>
+      </div>
+
+      <div class="menu-board">
+        <h3>おまかせ定食<span class="price">¥1,400</span></h3>
+        <p class="note">小鉢6品（エビグラタン付）＋お刺身＋メイン（お好きな1品をお選びください）</p>
+        <ul>
+          <li>・エビフライ</li>
+          <li>・とりなんばん</li>
+          <li>・とんかつ</li>
+          <li>・ヒレカツ</li>
+          <li>・サワラフライ</li>
+          <li>・カレーコロッケ</li>
+        </ul>
+        <div class="menu-sub">
+          <div class="row"><span>ジュース各種</span><span class="p">各¥200</span></div>
+          <p class="note" style="margin-top:2px">りんご／オレンジ／グレープフルーツ</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="drink-note">セルフドリンクバー付き（<strong>ルイボスティー・麦茶・食後のコーヒー</strong>）　※お支払いは現金のみ</div>
+  </div>
+</section>
+
+<section>
+  <span class="section-tag">GALLERY</span>
+  <h2 class="ttl">店内のようす</h2>
+  <div class="gallery">
+    <figure><img src="../../images/odekake/shoku-sanchome/p06_teishoku3.jpg" alt="おまかせ定食" loading="lazy"><figcaption>おまかせ定食（小鉢6品・お刺身付）</figcaption></figure>
+    <figure><img src="../../images/odekake/shoku-sanchome/p08_teishoku5.jpg" alt="おまかせ定食 メイン" loading="lazy"><figcaption>メインはヒレカツを選択</figcaption></figure>
+    <figure><img src="../../images/odekake/shoku-sanchome/p09_teishoku6.jpg" alt="定食全体" loading="lazy"><figcaption>ずらりと並ぶ小鉢</figcaption></figure>
+    <figure><img src="../../images/odekake/shoku-sanchome/p01_menu1.jpg" alt="お品書き黒板" loading="lazy"><figcaption>店内のお品書き黒板</figcaption></figure>
+    <figure><img src="../../images/odekake/shoku-sanchome/p03_drinkbar.jpg" alt="セルフドリンクバー" loading="lazy"><figcaption>セルフドリンクコーナー</figcaption></figure>
+    <figure><img src="../../images/odekake/shoku-sanchome/p13_exterior.jpg" alt="食３丁目 外観" loading="lazy"><figcaption>木の温もりある外観</figcaption></figure>
+  </div>
+</section>
+
+<section>
+  <span class="section-tag">INFORMATION</span>
+  <h2 class="ttl">店舗情報</h2>
+  <table class="info-table">
+    <tr><th>店名</th><td>お食事処 食３丁目（しょくさんちょうめ）</td></tr>
+    <tr><th>住所</th><td>〒921-8044 石川県金沢市米泉町３丁目５１−２</td></tr>
+    <tr><th>営業時間</th><td>11:30〜14:00（ラストオーダー 13:30）</td></tr>
+    <tr><th>定休日</th><td>日曜・月曜・火曜</td></tr>
+    <tr><th>お支払い</th><td>現金のみ</td></tr>
+    <tr><th>駐車場</th><td>第2駐車場あり（店舗横、案内板の道順に沿ってお進みください）</td></tr>
+    <tr><th>Instagram</th><td><a href="https://www.instagram.com/3cho_me_/" target="_blank" rel="noopener">@3cho_me_</a></td></tr>
+    <tr><th>食べログ</th><td><a href="https://tabelog.com/ishikawa/A1702/A170203/17014525/" target="_blank" rel="noopener">食３丁目 - 食べログ</a></td></tr>
+  </table>
+  <a class="map-btn" href="https://www.google.com/maps/search/?api=1&query=%E9%A3%9F3%E4%B8%81%E7%9B%AE+%E9%87%91%E6%B2%A2%E5%B8%82%E7%B1%B3%E6%B3%89%E7%94%BA" target="_blank" rel="noopener">📍 Googleマップで見る</a>
+</section>
+
+</div>
+
+<footer>
+  <p>このページは <a href="https://chiwacogi-studio.pages.dev/">チワコギー工房</a> の「行ってきたシリーズ」で、一人のファンが勝手に作成した非公式の紹介ページです。<br>
+  掲載写真はすべて実際に訪問して撮影したものです。お店・法人の公式サイトではありません。</p>
+</footer>
+
+</body>
+</html>
