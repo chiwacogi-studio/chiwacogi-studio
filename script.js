@@ -37,6 +37,27 @@ if (toTop) {
   toTop.addEventListener("click", () => window.scrollTo({ top: 0, behavior: "smooth" }));
 }
 
+// 更新情報（updates.json → トップページの更新情報・SNSセクション）
+const newsList = document.getElementById("news-list");
+if (newsList) {
+  fetch("updates.json", { cache: "no-cache" })
+    .then(r => { if (!r.ok) throw new Error(`HTTP ${r.status}`); return r.json(); })
+    .then(items => {
+      newsList.innerHTML = items.slice(0, 6).map(u => {
+        const date = u.date.replace(/-/g, ".");
+        const external = /^https?:/.test(u.url || "");
+        const text = u.url
+          ? `<a href="${u.url}"${external ? ' target="_blank" rel="noopener"' : ""}>${u.text}</a>`
+          : u.text;
+        return `<li><span class="news-date">${date}</span><span class="news-icon">${u.icon || "🐾"}</span><span class="news-text">${text}</span></li>`;
+      }).join("");
+    })
+    .catch(e => {
+      console.warn("更新情報の取得失敗", e);
+      newsList.innerHTML = '<li class="news-loading">更新情報を読み込めませんでした</li>';
+    });
+}
+
 const decode = (s) => {
   const t = document.createElement("textarea");
   t.innerHTML = s;

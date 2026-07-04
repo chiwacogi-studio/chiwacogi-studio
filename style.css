@@ -173,6 +173,7 @@ img { max-width: 100%; height: auto; display: block; }
 
 /* Sections */
 .section { padding: 80px 0; }
+section[id] { scroll-margin-top: 76px; }
 .section-cream { background: var(--cream); }
 .section-title {
   text-align: center;
@@ -675,6 +676,83 @@ img { max-width: 100%; height: auto; display: block; }
 
 /* "もっと見る" ボタン */
 .section-more { text-align: center; margin-top: 40px; }
+
+/* 更新情報 */
+.news-list {
+  list-style: none;
+  max-width: 720px;
+  margin: 0 auto 46px;
+}
+.news-list li {
+  background: #fff;
+  border: 2px solid var(--cream-deep);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 12px 18px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+  font-size: 14px;
+}
+.news-date {
+  color: var(--text-soft);
+  font-size: 12px;
+  font-weight: 700;
+  white-space: nowrap;
+  letter-spacing: 0.03em;
+}
+.news-icon { flex-shrink: 0; }
+.news-text { flex: 1; }
+.news-text a { color: var(--text); font-weight: 700; }
+.news-text a:hover { color: var(--pink-deep); opacity: 1; }
+.news-loading { justify-content: center; color: var(--text-soft); }
+@media (max-width: 600px) {
+  .news-list li { flex-wrap: wrap; gap: 6px 10px; font-size: 13px; }
+  .news-text { flex-basis: 100%; }
+}
+
+/* 行ってきたシリーズ */
+.odekake-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+  margin-top: 32px;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.odekake-card {
+  background: #fff;
+  border-radius: var(--radius-lg);
+  border: 3px solid var(--cream-deep);
+  box-shadow: var(--shadow);
+  overflow: hidden;
+  transition: transform 0.2s, box-shadow 0.2s;
+  display: flex;
+  flex-direction: column;
+}
+.odekake-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-hover); }
+.odekake-photo-link { position: relative; display: block; }
+.odekake-photo { width: 100%; aspect-ratio: 16 / 10; object-fit: cover; }
+.odekake-num {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  background: var(--pink-deep);
+  color: #fff;
+  font-size: 12px;
+  font-weight: 900;
+  padding: 4px 12px;
+  border-radius: 999px;
+  letter-spacing: 0.05em;
+}
+.odekake-body { padding: 18px 20px 22px; flex: 1; display: flex; flex-direction: column; }
+.odekake-body h3 { color: var(--brown); font-size: 17px; margin-bottom: 4px; }
+.odekake-meta { font-size: 12px; color: var(--text-soft); margin-bottom: 10px; letter-spacing: 0.03em; }
+.odekake-desc { font-size: 13px; color: var(--text); margin-bottom: 16px; flex: 1; }
+.odekake-links { display: flex; align-items: center; gap: 14px; flex-wrap: wrap; }
+.odekake-blog-link { font-size: 13px; font-weight: 700; }
 
 /* Footer nav */
 .footer-nav {
