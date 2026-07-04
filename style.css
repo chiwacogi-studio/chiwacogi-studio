@@ -168,7 +168,7 @@ img { max-width: 100%; height: auto; display: block; }
   .hero-friend { width: 60px; }
   .hero-friend-1 { top: 6%; left: 4%; }
   .hero-friend-2 { top: 8%; right: 4%; }
-  .hero-friend-3 { bottom: 10%; left: 4%; width: 55px; }
+  .hero-friend-3 { display: none; }
 }
 
 /* Sections */
@@ -254,12 +254,9 @@ img { max-width: 100%; height: auto; display: block; }
 /* ===== 音楽セクション ===== */
 .music-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 24px;
   margin-top: 32px;
-  max-width: 900px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .music-card {
@@ -582,6 +579,135 @@ img { max-width: 100%; height: auto; display: block; }
 .site-footer p { margin: 4px 0; font-size: 14px; }
 .footer-note { font-size: 12px; opacity: 0.7; }
 .site-footer a { color: var(--pink-soft); }
+
+/* Nav current page */
+.nav a.is-current { color: var(--pink-deep); }
+.nav a.is-current::after { content: " 🐾"; font-size: 11px; }
+
+/* Home stats strip */
+.home-stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  max-width: 900px;
+  margin: -48px auto 0;
+  padding: 0 24px;
+  position: relative;
+  z-index: 3;
+}
+.stat-card {
+  background: #fff;
+  border: 2px solid var(--cream-deep);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 18px 10px 14px;
+  text-align: center;
+  color: var(--text);
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.stat-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-hover); opacity: 1; }
+.stat-emoji { font-size: 26px; }
+.stat-num { font-size: 24px; font-weight: 900; color: var(--brown); line-height: 1.2; }
+.stat-num small { font-size: 12px; font-weight: 700; color: var(--text-soft); margin-left: 2px; }
+.stat-label { font-size: 12px; font-weight: 700; color: var(--text-soft); }
+@media (max-width: 720px) {
+  .home-stats { grid-template-columns: repeat(2, 1fr); gap: 12px; margin-top: -36px; padding: 0 16px; }
+  .stat-num { font-size: 20px; }
+}
+
+/* Sub-page hero */
+.page-hero {
+  padding: 56px 24px 48px;
+  text-align: center;
+  background: linear-gradient(180deg, var(--pink-soft) 0%, var(--cream) 100%);
+}
+.page-title {
+  font-size: clamp(30px, 5vw, 44px);
+  font-weight: 900;
+  color: var(--brown);
+  text-shadow: 2px 2px 0 #fff, 4px 4px 0 var(--pink);
+  letter-spacing: 0.02em;
+}
+.page-title::after { content: "🐾"; display: block; font-size: 20px; margin-top: 6px; text-shadow: none; }
+.page-lead { color: var(--text-soft); font-size: 15px; margin-top: 8px; }
+
+/* Tabs */
+.tabs {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 34px;
+  position: sticky;
+  top: 66px;
+  z-index: 50;
+  padding: 10px 0;
+}
+.tab-btn {
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--brown);
+  background: #fff;
+  border: 2px solid var(--pink);
+  border-radius: 999px;
+  padding: 9px 20px;
+  cursor: pointer;
+  box-shadow: var(--shadow);
+  transition: transform 0.15s, background 0.15s, color 0.15s;
+}
+.tab-btn:hover { transform: translateY(-2px); }
+.tab-btn.is-active {
+  background: var(--pink-deep);
+  border-color: var(--pink-deep);
+  color: #fff;
+}
+.tab-group[hidden] { display: none; }
+.section-list { padding-top: 44px; }
+.section-list .sticker-subtitle:first-of-type { margin-top: 0; }
+@media (max-width: 720px) {
+  .tabs { top: 58px; gap: 8px; }
+  .tab-btn { font-size: 12px; padding: 8px 14px; }
+}
+
+/* "もっと見る" ボタン */
+.section-more { text-align: center; margin-top: 40px; }
+
+/* Footer nav */
+.footer-nav {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 8px 22px;
+  margin-bottom: 16px;
+}
+.footer-nav a { color: #fff; font-size: 14px; font-weight: 700; }
+.footer-nav a:hover { color: var(--pink-soft); }
+
+/* ページ先頭へ戻る */
+.to-top {
+  position: fixed;
+  right: 18px;
+  bottom: 18px;
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  border: 2px solid var(--pink);
+  background: #fff;
+  font-size: 22px;
+  cursor: pointer;
+  box-shadow: var(--shadow);
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(10px);
+  transition: opacity 0.25s, transform 0.25s;
+  z-index: 90;
+}
+.to-top.is-visible { opacity: 1; pointer-events: auto; transform: translateY(0); }
+.to-top:hover { background: var(--pink-soft); }
 
 /* Mobile */
 @media (max-width: 720px) {

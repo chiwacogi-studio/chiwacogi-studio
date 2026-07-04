@@ -13,6 +13,30 @@ if (navToggle && nav) {
   nav.querySelectorAll("a").forEach(a => a.addEventListener("click", () => nav.classList.remove("is-open")));
 }
 
+// タブ切替（music.html / stickers.html）
+document.querySelectorAll(".tabs").forEach(tabs => {
+  const btns = tabs.querySelectorAll(".tab-btn");
+  const groups = document.querySelectorAll(".tab-group");
+  btns.forEach(btn => {
+    btn.addEventListener("click", () => {
+      btns.forEach(b => b.classList.toggle("is-active", b === btn));
+      const target = btn.dataset.target;
+      groups.forEach(g => {
+        g.hidden = target !== "all" && g.dataset.group !== target;
+      });
+    });
+  });
+});
+
+// ページ先頭へ戻るボタン
+const toTop = document.querySelector(".to-top");
+if (toTop) {
+  window.addEventListener("scroll", () => {
+    toTop.classList.toggle("is-visible", window.scrollY > 600);
+  }, { passive: true });
+  toTop.addEventListener("click", () => window.scrollTo({ top: 0, behavior: "smooth" }));
+}
+
 const decode = (s) => {
   const t = document.createElement("textarea");
   t.innerHTML = s;
@@ -100,7 +124,9 @@ function renderPost(p) {
   `;
 }
 
-catFilter?.addEventListener("change", (e) => loadPosts(e.target.value));
-
-loadCategories();
-loadPosts();
+// ブログセクションはトップページのみ
+if (blogList) {
+  catFilter?.addEventListener("change", (e) => loadPosts(e.target.value));
+  loadCategories();
+  loadPosts();
+}
