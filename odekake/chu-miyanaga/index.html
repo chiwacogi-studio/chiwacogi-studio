@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>中華料理 チュー松任宮永店 | 白山市宮永の町中華 - チワコギー工房</title>
+<meta name="description" content="石川県白山市宮永市町「中華料理チュー松任宮永店」の紹介ページ。昔ながらのオムライス・肉ダンゴをはじめ、ラーメン・丼ぶり・お飲み物まで御献立と店舗情報をご紹介します。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Yuji+Syuku&family=Zen+Kaku+Gothic+New:wght@400;500;700;900&display=swap" rel="stylesheet">
+<style>
+:root{
+  --red:#c62828;        /* 店内カウンター・看板の赤 */
+  --red-dark:#8e1c1c;
+  --cream:#f4e9c1;       /* 看板の生成り */
+  --ink:#2b241a;
+  --bg:#fdf6e6;
+  --card:#ffffff;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Zen Kaku Gothic New',sans-serif;background:var(--bg);color:var(--ink);line-height:1.85}
+.wrap{max-width:920px;margin:0 auto;padding:0 22px}
+h1,h2{font-family:'Yuji Syuku',serif;letter-spacing:.04em}
+
+/* ===== hero: 食券スタイル ===== */
+.hero{position:relative;padding:0;background:var(--red)}
+.hero-inner{max-width:920px;margin:0 auto;padding:36px 22px 0;display:flex;flex-direction:column;align-items:center}
+.ticket{position:relative;background:var(--cream);border:3px dashed var(--ink);border-radius:6px;padding:34px 30px 30px;max-width:640px;width:100%;text-align:center;box-shadow:0 10px 30px rgba(0,0,0,.25)}
+.ticket::before,.ticket::after{content:"";position:absolute;top:50%;width:26px;height:26px;background:var(--red);border-radius:50%;transform:translateY(-50%)}
+.ticket::before{left:-13px}
+.ticket::after{right:-13px}
+.ticket .kanban{font-family:'Yuji Syuku',serif;font-size:.85rem;letter-spacing:.3em;color:var(--red-dark);margin-bottom:10px}
+.ticket h1{font-size:clamp(1.9rem,6vw,2.9rem);color:var(--ink)}
+.ticket .sub{display:block;font-family:'Zen Kaku Gothic New',sans-serif;font-size:.9rem;font-weight:700;color:var(--red-dark);margin-top:12px;letter-spacing:.05em}
+.hero-photo{width:100%;max-width:920px;margin-top:-1px}
+.hero-photo img{width:100%;height:46vh;min-height:280px;object-fit:cover;display:block;border-top:6px solid var(--cream)}
+
+/* ===== section common ===== */
+.section-tag{display:inline-block;background:var(--red);color:#fff;font-family:'Yuji Syuku',serif;font-size:.85rem;letter-spacing:.15em;padding:5px 18px;margin-bottom:14px;border-radius:2px}
+section{padding:52px 0}
+h2.ttl{font-size:1.55rem;margin-bottom:8px;color:var(--ink)}
+p.lead{color:#6b5f47;margin-bottom:26px;font-size:.95rem}
+
+/* ===== concept ===== */
+.concept-body p{margin-bottom:16px;font-size:1rem}
+.kodawari{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:16px;margin-top:26px}
+.kodawari .item{background:var(--card);border:2px solid var(--red);border-radius:10px;padding:20px;text-align:center;position:relative}
+.kodawari .item .ico{font-size:1.8rem;margin-bottom:8px}
+.kodawari .item .ttl2{font-weight:700;margin-bottom:6px;color:var(--red-dark)}
+.kodawari .item .txt{font-size:.86rem;color:#6b5f47}
+
+/* ===== menu: 短冊メニュー風 ===== */
+.menu-cat{margin-bottom:34px}
+.menu-cat h3{font-family:'Yuji Syuku',serif;font-size:1.15rem;color:#fff;background:var(--red);display:inline-block;padding:6px 20px;margin-bottom:16px;border-radius:2px}
+.menu-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:0}
+.menu-item{display:flex;justify-content:space-between;align-items:baseline;gap:10px;padding:12px 4px;border-bottom:1px dotted #c8b98a}
+.menu-item .name{font-weight:700;font-size:.95rem}
+.menu-item .name .badge{display:inline-block;background:var(--red);color:#fff;font-size:.66rem;font-weight:900;border-radius:3px;padding:2px 6px;margin-right:6px;vertical-align:middle}
+.menu-item .price{white-space:nowrap;font-weight:900;color:var(--red-dark);font-size:1rem;font-family:'Yuji Syuku',serif}
+.menu-note{font-size:.82rem;color:#8a7d61;margin-top:10px}
+.menu-featured{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;margin-bottom:20px}
+.menu-featured figure{background:var(--card);border:2px solid var(--ink);border-radius:10px;overflow:hidden}
+.menu-featured img{width:100%;aspect-ratio:4/3;object-fit:cover;display:block;border-bottom:2px solid var(--ink)}
+.menu-featured figcaption{padding:12px 14px}
+.menu-featured .name{font-weight:700;font-size:.98rem;margin-bottom:4px}
+.menu-featured .price{color:var(--red-dark);font-weight:900;font-family:'Yuji Syuku',serif}
+
+/* ===== gallery: ポラロイド風グリッド ===== */
+.gallery-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:22px;padding-top:10px}
+.pola{background:#fff;padding:10px 10px 20px;box-shadow:0 6px 16px rgba(0,0,0,.12);transform:rotate(var(--r,0deg));transition:transform .2s}
+.pola:nth-child(odd){--r:-2deg}
+.pola:nth-child(even){--r:2deg}
+.pola img{width:100%;aspect-ratio:4/3;object-fit:cover;display:block;margin-bottom:10px}
+.pola figcaption{font-size:.82rem;text-align:center;color:var(--ink);font-weight:700}
+
+/* ===== info ===== */
+.info-table{width:100%;background:var(--card);border-radius:10px;overflow:hidden;box-shadow:0 4px 14px rgba(43,36,26,.08);border-collapse:collapse}
+.info-table th,.info-table td{padding:15px 18px;text-align:left;border-bottom:1px solid #f0e0b8;font-size:.95rem;vertical-align:top}
+.info-table th{width:30%;background:#fdeccf;font-weight:700;color:var(--ink)}
+.info-table tr:last-child th,.info-table tr:last-child td{border-bottom:none}
+.info-table a{color:var(--red-dark);font-weight:700;text-decoration:none}
+.map-btn{display:inline-block;margin-top:20px;background:var(--red);color:#fff;font-weight:700;padding:13px 30px;border-radius:4px;text-decoration:none;letter-spacing:.05em;box-shadow:0 4px 0 var(--red-dark)}
+.map-btn:hover{opacity:.9}
+.eigyouchu{display:inline-block;border:3px solid var(--red);color:var(--red);font-family:'Yuji Syuku',serif;font-size:.9rem;padding:4px 12px;border-radius:4px;transform:rotate(-4deg);margin-left:10px}
+
+footer{background:var(--ink);color:#e9dfc4;text-align:center;padding:30px 20px;font-size:.8rem;line-height:1.7}
+footer a{color:var(--cream);text-decoration:none}
+</style>
+</head>
+<body>
+
+<div class="hero">
+  <div class="hero-inner">
+    <div class="ticket">
+      <div class="kanban">中華料理</div>
+      <h1>チュー松任宮永店<span class="sub">白山市宮永市町 ─ 変わらぬ味の町中華</span></h1>
+    </div>
+  </div>
+  <div class="hero-photo">
+    <img src="../../images/odekake/chu-miyanaga/hero.jpg" alt="中華料理チュー松任宮永店 外観">
+  </div>
+</div>
+
+<div class="wrap">
+
+<section>
+  <span class="section-tag">CONCEPT</span>
+  <h2 class="ttl">地元で愛され続ける、お昼の町中華</h2>
+  <div class="concept-body">
+    <p>白山市宮永市町にある「中華料理チュー松任宮永店」は、昔から地元で出前もよく利用されてきた町中華です。現在はお昼のみの営業で、14時ごろには閉まってしまうことが多いお店ですが、日曜日も営業しており、お昼どきはあっという間に満席になります。</p>
+    <p>看板メニューはオムライスと肉ダンゴ。出前時代はカツカレーも一緒に頼んでいたそうですが、最近はオムライス一本槍。久しぶりに訪れても、変わらない美味しさでお客様が次々と入ってくる、地域に根づいた一軒です。</p>
+  </div>
+  <div class="kodawari">
+    <div class="item"><div class="ico">🍳</div><div class="ttl2">昔ながらのオムライス</div><div class="txt">ケチャップたっぷり、卵とライスのシンプルな美味しさ</div></div>
+    <div class="item"><div class="ico">🥩</div><div class="ttl2">看板の肉ダンゴ</div><div class="txt">甘辛い餡がたっぷり絡んだボリューム満点の一皿</div></div>
+    <div class="item"><div class="ico">🕧</div><div class="ttl2">お昼のみ営業</div><div class="txt">14時頃には閉店。日曜営業でお昼どきは満席必至</div></div>
+  </div>
+</section>
+
+<section>
+  <span class="section-tag">MENU</span>
+  <h2 class="ttl">御献立<span class="eigyouchu">営業中</span></h2>
+  <p class="lead">看板のオムライス・肉ダンゴから、麺類・御飯類・スープ・お飲み物まで。（大盛は+100円）</p>
+
+  <div class="menu-cat">
+    <h3>人気メニュー</h3>
+    <div class="menu-featured">
+      <figure>
+        <img src="../../images/odekake/chu-miyanaga/omurice.jpg" alt="オムライス">
+        <figcaption><div class="name">オムライス<span style="color:var(--red-dark)">（大盛+100円）</span></div><div class="price">750円〜</div></figcaption>
+      </figure>
+      <figure>
+        <img src="../../images/odekake/chu-miyanaga/niku-dango.jpg" alt="肉ダンゴ">
+        <figcaption><div class="name">肉ダンゴ</div><div class="price">780円</div></figcaption>
+      </figure>
+    </div>
+  </div>
+
+  <div class="menu-cat">
+    <h3>麺類（大盛100円増）</h3>
+    <div class="menu-grid">
+      <div class="menu-item"><span class="name">ラーメン</span><span class="price">600円</span></div>
+      <div class="menu-item"><span class="name">タンメン</span><span class="price">700円</span></div>
+      <div class="menu-item"><span class="name">五目麺</span><span class="price">800円</span></div>
+      <div class="menu-item"><span class="name">チャンポン麺</span><span class="price">700円</span></div>
+      <div class="menu-item"><span class="name">天津麺</span><span class="price">750円</span></div>
+      <div class="menu-item"><span class="name">広東麺</span><span class="price">750円</span></div>
+      <div class="menu-item"><span class="name">モヤシ麺</span><span class="price">650円</span></div>
+      <div class="menu-item"><span class="name">焼きそば</span><span class="price">680円</span></div>
+      <div class="menu-item"><span class="name">味噌ラーメン</span><span class="price">780円</span></div>
+      <div class="menu-item"><span class="name">塩ラーメン</span><span class="price">780円</span></div>
+      <div class="menu-item"><span class="name">冷やしラーメン<span class="badge">夏季限定</span></span><span class="price">750円</span></div>
+    </div>
+  </div>
+
+  <div class="menu-cat">
+    <h3>料理類・スープ類</h3>
+    <div class="menu-grid">
+      <div class="menu-item"><span class="name">餃子</span><span class="price">480円</span></div>
+      <div class="menu-item"><span class="name">酢豚</span><span class="price">780円</span></div>
+      <div class="menu-item"><span class="name">豚の天ぷら</span><span class="price">780円</span></div>
+      <div class="menu-item"><span class="name">鳥の唐揚げ</span><span class="price">780円</span></div>
+      <div class="menu-item"><span class="name">野菜炒め</span><span class="price">680円</span></div>
+      <div class="menu-item"><span class="name">野菜スープ</span><span class="price">450円</span></div>
+      <div class="menu-item"><span class="name">玉子スープ</span><span class="price">450円</span></div>
+      <div class="menu-item"><span class="name">豚スープ</span><span class="price">480円</span></div>
+    </div>
+  </div>
+
+  <div class="menu-cat">
+    <h3>御飯類（大盛100円増）・お飲み物</h3>
+    <div class="menu-grid">
+      <div class="menu-item"><span class="name">定食</span><span class="price">850円</span></div>
+      <div class="menu-item"><span class="name">焼き飯</span><span class="price">650円</span></div>
+      <div class="menu-item"><span class="name">中華飯</span><span class="price">680円</span></div>
+      <div class="menu-item"><span class="name">天津飯</span><span class="price">680円</span></div>
+      <div class="menu-item"><span class="name">チキンライス</span><span class="price">700円</span></div>
+      <div class="menu-item"><span class="name">カレーライス</span><span class="price">650円</span></div>
+      <div class="menu-item"><span class="name">カツカレーライス</span><span class="price">750円</span></div>
+      <div class="menu-item"><span class="name">カツ丼</span><span class="price">750円</span></div>
+      <div class="menu-item"><span class="name">玉子丼</span><span class="price">680円</span></div>
+      <div class="menu-item"><span class="name">御酒</span><span class="price">450円</span></div>
+      <div class="menu-item"><span class="name">ビール</span><span class="price">650円</span></div>
+      <div class="menu-item"><span class="name">ジュース</span><span class="price">180円</span></div>
+    </div>
+    <p class="menu-note">※裏面にもメニューがあります。詳しくは店頭でご確認ください。</p>
+  </div>
+</section>
+
+<section>
+  <span class="section-tag">GALLERY</span>
+  <h2 class="ttl">お店のようす</h2>
+  <div class="gallery-grid">
+    <figure class="pola"><img src="../../images/odekake/chu-miyanaga/entrance.jpg" alt="チュー松任宮永店 入口" loading="lazy"><figcaption>お店の入口</figcaption></figure>
+    <figure class="pola"><img src="../../images/odekake/chu-miyanaga/interior.jpg" alt="店内カウンター席" loading="lazy"><figcaption>赤いカウンターが印象的な店内</figcaption></figure>
+    <figure class="pola"><img src="../../images/odekake/chu-miyanaga/kitchen.jpg" alt="厨房で調理する様子" loading="lazy"><figcaption>厨房では手際よく調理中</figcaption></figure>
+    <figure class="pola"><img src="../../images/odekake/chu-miyanaga/menu1.jpg" alt="御献立の看板（麺類）" loading="lazy"><figcaption>店内の御献立看板</figcaption></figure>
+  </div>
+</section>
+
+<section>
+  <span class="section-tag">INFORMATION</span>
+  <h2 class="ttl">店舗情報</h2>
+  <table class="info-table">
+    <tr><th>店名</th><td>中華料理 チュー松任宮永店</td></tr>
+    <tr><th>住所</th><td>〒924-0016 石川県白山市宮永市町480-1</td></tr>
+    <tr><th>電話番号</th><td>076-276-7068</td></tr>
+    <tr><th>営業時間</th><td>お昼のみ営業（14時頃閉店の場合あり）</td></tr>
+    <tr><th>食べログ</th><td><a href="https://tabelog.com/ishikawa/A1702/A170203/17004087/" target="_blank" rel="noopener">中華料理チュー松任宮永店 - 食べログ</a></td></tr>
+  </table>
+  <a class="map-btn" href="https://www.google.com/maps/search/?api=1&query=%E7%9F%B3%E5%B7%9D%E7%9C%8C%E7%99%BD%E5%B1%B1%E5%B8%82%E5%AE%AE%E6%B0%B8%E5%B8%82%E7%94%BA480-1" target="_blank" rel="noopener">📍 Googleマップで見る</a>
+</section>
+
+</div>
+
+<footer>
+  <p>このページは <a href="https://chiwacogi-studio.pages.dev/">チワコギー工房</a> の「行ってきたシリーズ」で、一人のファンが勝手に作成した非公式の紹介ページです。<br>
+  掲載写真はすべて実際に訪問して撮影したものです。お店・法人の公式サイトではありません。メニュー内容・価格は訪問時点のものです。</p>
+</footer>
+
+</body>
+</html>
