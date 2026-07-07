@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>むさしの森珈琲 金沢入江店 | 森でくつろぐふわとろパンケーキ - チワコギー工房</title>
+<meta name="description" content="石川県金沢市入江「むさしの森珈琲 金沢入江店」の紹介ページ。ふわとろパンケーキ ローストナッツクリームや珈琲ゼリーフロートなど、いただいた御献立と店舗情報を、一人のファンが勝手にご紹介します。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;600;700;800&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --forest:#33503a;      /* 深い森の緑 */
+  --forest-d:#22392a;
+  --moss:#6f8f63;        /* 苔・若葉 */
+  --cream:#f6f1e3;       /* 生成り・紙 */
+  --paper:#fbf8f0;
+  --wood:#9a7a56;        /* テーブルの木肌 */
+  --ink:#2c2a23;
+  --gold:#b98b3e;        /* 価格アクセント */
+  --card:#ffffff;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  font-family:"Zen Kaku Gothic New",sans-serif;
+  color:var(--ink);
+  background:var(--paper);
+  line-height:1.85;
+  -webkit-font-smoothing:antialiased;
+}
+.serif{font-family:"Shippori Mincho",serif}
+img{display:block;width:100%;height:100%;object-fit:cover}
+
+/* ===== ヒーロー ===== */
+.hero{
+  position:relative;
+  background:
+    radial-gradient(120% 90% at 80% 10%, rgba(111,143,99,.35), transparent 60%),
+    linear-gradient(160deg,var(--forest) 0%,var(--forest-d) 100%);
+  color:var(--cream);
+  padding:74px 24px 90px;
+  overflow:hidden;
+  text-align:center;
+}
+.leaf{position:absolute;opacity:.16;fill:none;stroke:var(--cream);stroke-width:1.4}
+.leaf.l1{top:24px;left:-30px;width:220px;transform:rotate(-18deg)}
+.leaf.l2{bottom:-40px;right:-30px;width:260px;transform:rotate(150deg)}
+.hero-inner{position:relative;max-width:760px;margin:0 auto;z-index:2}
+.hero .eyebrow{
+  font-size:.8rem;letter-spacing:.42em;text-indent:.42em;
+  color:var(--moss);margin-bottom:18px;font-weight:500;
+}
+.hero h1{
+  font-family:"Shippori Mincho",serif;font-weight:800;
+  font-size:clamp(2.1rem,7vw,3.3rem);line-height:1.35;letter-spacing:.04em;
+  margin-bottom:8px;
+}
+.hero h1 small{display:block;font-size:.42em;letter-spacing:.3em;color:var(--moss);margin-top:14px;font-weight:600}
+.hero .loc{font-size:.95rem;letter-spacing:.14em;opacity:.9;margin-top:22px}
+.hero .photo-frame{
+  margin:40px auto 0;max-width:440px;aspect-ratio:4/3;
+  border-radius:26px;overflow:hidden;
+  border:6px solid rgba(246,241,227,.9);
+  box-shadow:0 26px 50px -18px rgba(0,0,0,.5);
+}
+.wave{display:block;width:100%;height:auto;margin-top:-1px}
+
+/* ===== セクション共通 ===== */
+section{padding:70px 22px}
+.wrap{max-width:920px;margin:0 auto}
+.sec-head{text-align:center;margin-bottom:46px}
+.sec-head .en{font-size:.72rem;letter-spacing:.4em;color:var(--moss);font-weight:700;text-transform:uppercase}
+.sec-head h2{
+  font-family:"Shippori Mincho",serif;font-weight:700;
+  font-size:clamp(1.6rem,5vw,2.2rem);color:var(--forest);margin-top:10px;letter-spacing:.06em;
+}
+.sec-head .lead{max-width:640px;margin:20px auto 0;color:#55534a;font-size:1rem}
+
+/* ===== コンセプト ===== */
+.concept{background:var(--cream)}
+.concept-words{display:flex;justify-content:center;gap:14px;flex-wrap:wrap;margin-top:36px}
+.cw{
+  background:var(--card);border-radius:999px;padding:12px 26px;
+  font-family:"Shippori Mincho",serif;font-weight:700;color:var(--forest);
+  font-size:1.05rem;letter-spacing:.12em;
+  box-shadow:0 8px 22px -12px rgba(51,80,58,.5);
+  border:1px solid rgba(111,143,99,.25);
+}
+
+/* ===== お品書き ===== */
+.menu-list{display:flex;flex-direction:column;gap:22px;max-width:720px;margin:0 auto}
+.dish{
+  display:grid;grid-template-columns:1fr auto;gap:8px 20px;align-items:end;
+  background:var(--card);border-radius:18px;padding:24px 26px;
+  border:1px solid rgba(154,122,86,.18);
+  box-shadow:0 12px 26px -20px rgba(44,42,35,.5);
+  position:relative;
+}
+.dish::before{
+  content:"";position:absolute;left:0;top:22px;bottom:22px;width:4px;border-radius:4px;
+  background:linear-gradient(var(--moss),var(--forest));
+}
+.dish .name{font-family:"Shippori Mincho",serif;font-weight:700;font-size:1.18rem;color:var(--forest);padding-left:14px}
+.dish .price{font-family:"Shippori Mincho",serif;font-weight:700;color:var(--gold);font-size:1.15rem;white-space:nowrap}
+.dish .price small{display:block;font-size:.62em;color:#8a8578;font-weight:500;letter-spacing:.02em}
+.dish .desc{grid-column:1/-1;padding-left:14px;color:#5f5c52;font-size:.92rem}
+.menu-note{
+  max-width:720px;margin:26px auto 0;background:rgba(111,143,99,.12);
+  border-radius:14px;padding:16px 22px;font-size:.9rem;color:#4d5c46;
+  border:1px dashed rgba(111,143,99,.5);
+}
+.menu-note b{color:var(--forest)}
+
+/* ===== ギャラリー ===== */
+.gallery{background:var(--cream)}
+.grid{display:grid;grid-template-columns:repeat(6,1fr);gap:14px}
+.gitem{overflow:hidden;border-radius:18px;box-shadow:0 14px 30px -20px rgba(44,42,35,.6);background:#fff}
+.gitem img{transition:transform .5s ease}
+.gitem:hover img{transform:scale(1.05)}
+.g-big{grid-column:span 4;aspect-ratio:4/3}
+.g-tall{grid-column:span 2;aspect-ratio:3/4}
+.g-sm{grid-column:span 2;aspect-ratio:1/1}
+.cap{text-align:center;margin-top:8px;font-size:.82rem;color:#7a766b}
+
+/* ===== スポット情報 ===== */
+.info{background:var(--forest);color:var(--cream)}
+.info .sec-head h2{color:var(--cream)}
+.info .sec-head .en{color:var(--moss)}
+.info-card{
+  max-width:640px;margin:0 auto;background:rgba(255,255,255,.06);
+  border:1px solid rgba(246,241,227,.22);border-radius:20px;padding:34px 30px;
+}
+.info-row{display:flex;gap:16px;padding:14px 0;border-bottom:1px solid rgba(246,241,227,.16);font-size:.96rem}
+.info-row:last-of-type{border-bottom:none}
+.info-row .k{flex:0 0 96px;color:var(--moss);font-weight:700;letter-spacing:.08em}
+.info-row .v{flex:1}
+.info-row .v a{color:var(--cream);text-decoration:underline;text-underline-offset:3px;word-break:break-all}
+.btns{display:flex;gap:12px;flex-wrap:wrap;justify-content:center;margin-top:28px}
+.btn{
+  display:inline-block;padding:14px 26px;border-radius:999px;font-weight:700;
+  font-size:.95rem;text-decoration:none;letter-spacing:.06em;transition:transform .2s,box-shadow .2s;
+}
+.btn:hover{transform:translateY(-2px)}
+.btn-map{background:var(--cream);color:var(--forest);box-shadow:0 12px 24px -12px rgba(0,0,0,.5)}
+.btn-out{background:transparent;color:var(--cream);border:1.5px solid rgba(246,241,227,.6)}
+
+/* ===== フッター ===== */
+footer{background:var(--forest-d);color:#cfd8c6;text-align:center;padding:34px 22px;font-size:.8rem;line-height:1.8}
+footer a{color:var(--cream);text-decoration:none}
+
+@media(max-width:640px){
+  .grid{grid-template-columns:repeat(2,1fr)}
+  .g-big{grid-column:span 2;aspect-ratio:4/3}
+  .g-tall{grid-column:span 1;aspect-ratio:3/4}
+  .g-sm{grid-column:span 1}
+  .dish{grid-template-columns:1fr}
+  .dish .price{text-align:left;padding-left:14px}
+  .info-row{flex-direction:column;gap:2px}
+  .info-row .k{flex:none}
+}
+</style>
+</head>
+<body>
+
+<!-- ===== ヒーロー ===== -->
+<header class="hero">
+  <svg class="leaf l1" viewBox="0 0 100 100"><path d="M50 5 C20 30 20 70 50 95 C80 70 80 30 50 5 Z M50 5 L50 95"/></svg>
+  <svg class="leaf l2" viewBox="0 0 100 100"><path d="M50 5 C20 30 20 70 50 95 C80 70 80 30 50 5 Z M50 5 L50 95"/></svg>
+  <div class="hero-inner">
+    <p class="eyebrow">MORNING · PANCAKE · COFFEE</p>
+    <h1>むさしの森珈琲<small>金沢入江店</small></h1>
+    <p class="loc">石川県金沢市入江 ・ 森でくつろぐカフェ時間</p>
+    <div class="photo-frame">
+      <img src="../../images/odekake/musashino-mori-coffee/pancake-nuts.jpg" alt="ふわとろパンケーキ ローストナッツクリーム">
+    </div>
+  </div>
+</header>
+<svg class="wave" viewBox="0 0 1440 60" preserveAspectRatio="none"><path fill="#fbf8f0" d="M0 60 L0 30 C240 60 480 0 720 20 C960 40 1200 60 1440 24 L1440 60 Z"/></svg>
+
+<!-- ===== コンセプト ===== -->
+<section class="concept">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="en">Concept</span>
+      <h2>森の中の一軒のような、やわらかな時間</h2>
+      <p class="lead">緑と木のぬくもりに包まれた店内で、注文ごとにメレンゲを立てて焼き上げる“ふわとろパンケーキ”と、こだわりの珈琲を。すかいらーくグループが手がける、ちょっと贅沢な森のカフェです。</p>
+    </div>
+    <div class="concept-words">
+      <span class="cw">森</span>
+      <span class="cw">ふわとろ</span>
+      <span class="cw">くつろぎ</span>
+    </div>
+  </div>
+</section>
+
+<!-- ===== お品書き ===== -->
+<section>
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="en">Menu</span>
+      <h2>いただいた御献立</h2>
+      <p class="lead">この日いただいたメニューをご紹介します。（価格は訪問時点・税込表記）</p>
+    </div>
+    <div class="menu-list">
+      <div class="dish">
+        <span class="name">ふわとろパンケーキ<br>ローストナッツクリーム</span>
+        <span class="price">¥1,078<small>（税抜 ¥980）</small></span>
+        <span class="desc">香ばしいローストナッツと生クリーム、蜂蜜入メイプルシロップ添え。泡雪のようにすっと消える、名物のふわとろ食感。</span>
+      </div>
+      <div class="dish">
+        <span class="name">ワンダーフルフル！<br>珈琲ゼリーフロート</span>
+        <span class="price">¥781<small>（税抜 ¥710）</small></span>
+        <span class="desc">ぷるぷるの珈琲ゼリーに、まろやかなバニラアイスをのせて。見た目以上にボリュームたっぷりの一杯。</span>
+      </div>
+      <div class="dish">
+        <span class="name">フローズン<br>ダークモカチップ ラテ</span>
+        <span class="price">¥770<small>（税抜 ¥700）</small></span>
+        <span class="desc">エスプレッソ・ミルク・チョコレート・氷をブレンド。チョコチップの食感が楽しい、ひんやりフローズンドリンク。</span>
+      </div>
+    </div>
+    <p class="menu-note">☕ <b>おかわりドリンクがうれしい。</b> お食事・デザートのご注文でセットドリンクは＋¥440（税込）、2杯目以降は＋¥330（税込）。さらに<b>LINE登録のクーポン</b>で、この日はアイスコーヒーのおかわりを100円で楽しめました。さすがすかいらーくグループ。</p>
+  </div>
+</section>
+
+<!-- ===== ギャラリー ===== -->
+<section class="gallery">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="en">Gallery</span>
+      <h2>森珈琲のひとときを、写真で</h2>
+    </div>
+    <div class="grid">
+      <div class="gitem g-big"><img src="../../images/odekake/musashino-mori-coffee/pancake-nuts.jpg" alt="ふわとろパンケーキ ローストナッツクリーム"></div>
+      <div class="gitem g-tall"><img src="../../images/odekake/musashino-mori-coffee/frozen-mocha.jpg" alt="フローズンダークモカチップラテ"></div>
+      <div class="gitem g-sm"><img src="../../images/odekake/musashino-mori-coffee/coffee-jelly-float.jpg" alt="珈琲ゼリーフロート"></div>
+      <div class="gitem g-sm"><img src="../../images/odekake/musashino-mori-coffee/pancake-2.jpg" alt="ふわとろパンケーキ"></div>
+      <div class="gitem g-sm"><img src="../../images/odekake/musashino-mori-coffee/menu-cover.jpg" alt="むさしの森珈琲のメニュー"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== スポット情報 ===== -->
+<section class="info">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="en">Information</span>
+      <h2>店舗情報</h2>
+    </div>
+    <div class="info-card">
+      <div class="info-row"><span class="k">店名</span><span class="v">むさしの森珈琲 金沢入江店</span></div>
+      <div class="info-row"><span class="k">住所</span><span class="v">〒921-8011 石川県金沢市入江2丁目89</span></div>
+      <div class="info-row"><span class="k">営業</span><span class="v">朝のモーニングから営業。詳しい営業時間・定休日は公式店舗ページをご確認ください。</span></div>
+      <div class="info-row"><span class="k">公式</span><span class="v"><a href="https://www.skylark.co.jp/mmcoffee/" target="_blank" rel="noopener">むさしの森珈琲 ブランドサイト</a></span></div>
+      <div class="info-row"><span class="k">店舗ページ</span><span class="v"><a href="https://store-info.skylark.co.jp/mmcoffee/map/198220/" target="_blank" rel="noopener">金沢入江店の店舗情報</a></span></div>
+      <div class="btns">
+        <a class="btn btn-map" href="https://www.google.com/maps/search/?api=1&query=むさしの森珈琲+金沢入江店" target="_blank" rel="noopener">📍 Googleマップで見る</a>
+        <a class="btn btn-out" href="https://tabelog.com/ishikawa/A1701/A170101/17010771/" target="_blank" rel="noopener">食べログ</a>
+        <a class="btn btn-out" href="https://www.hotpepper.jp/strJ004633023/" target="_blank" rel="noopener">ホットペッパー</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>このページは <a href="https://chiwacogi-studio.pages.dev/">チワコギー工房</a> の「行ってきたシリーズ」で、一人のファンが勝手に作成した非公式の紹介ページです。<br>
+  掲載写真はすべて実際に訪問して撮影したものです。お店・法人の公式サイトではありません。メニュー内容・価格は訪問時点のものです。</p>
+</footer>
+
+</body>
+</html>
