@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>ステーキハウス 六角堂 | 金沢・観音町の鉄板ステーキ - チワコギー工房</title>
+<meta name="description" content="石川県金沢市観音町の鉄板ステーキ店「ステーキハウス 六角堂」の紹介ページ。目の前の鉄板で焼き上げる輸入牛・国産牛・黒毛和牛・能登牛のステーキランチと店舗情報をご紹介します。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;600;700;800&family=Noto+Serif+JP:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --green:#173e30;      /* 庇の深緑 */
+  --green-d:#0e2a20;
+  --gold:#c6a353;       /* 看板のゴールド */
+  --gold-l:#e0c47f;
+  --ink:#1b1a17;        /* 鉄板の黒 */
+  --charcoal:#232019;
+  --cream:#f3ecdd;      /* 生成り */
+  --paper:#faf6ec;
+  --line:rgba(198,163,83,.35);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Noto Serif JP',serif;background:var(--paper);color:var(--ink);line-height:1.9;-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+.wrap{max-width:960px;margin:0 auto;padding:0 22px}
+h1,h2,h3{font-family:'Shippori Mincho',serif;letter-spacing:.05em;line-height:1.4}
+
+/* ===== hexagon motif ===== */
+.hex{display:inline-block;width:1em;height:1em;background:currentColor;clip-path:polygon(25% 5%,75% 5%,100% 50%,75% 95%,25% 95%,0 50%);vertical-align:-.12em}
+
+/* ===== hero ===== */
+.hero{position:relative;min-height:96vh;display:flex;align-items:center;justify-content:center;text-align:center;color:var(--cream);overflow:hidden;background:var(--green-d)}
+.hero::before{content:"";position:absolute;inset:0;background:url('../../images/odekake/rokkakudo/IMG_4301.jpg') center/cover;filter:brightness(.42) saturate(1.05)}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(14,42,32,.55) 0%,rgba(20,20,15,.35) 45%,rgba(14,42,32,.85) 100%)}
+.hero-inner{position:relative;z-index:2;padding:40px 22px}
+.hero .badge{font-family:'Shippori Mincho',serif;font-size:.8rem;letter-spacing:.42em;color:var(--gold-l);margin-bottom:22px;text-indent:.42em}
+.hex-frame{position:relative;width:112px;height:126px;margin:0 auto 26px;display:flex;align-items:center;justify-content:center}
+.hex-frame::before{content:"";position:absolute;inset:0;background:var(--gold);clip-path:polygon(50% 0,100% 25%,100% 75%,50% 100%,0 75%,0 25%)}
+.hex-frame::after{content:"";position:absolute;inset:4px;background:var(--green-d);clip-path:polygon(50% 0,100% 25%,100% 75%,50% 100%,0 75%,0 25%)}
+.hex-frame span{position:relative;z-index:2;font-family:'Shippori Mincho',serif;font-weight:800;font-size:1.15rem;color:var(--gold-l);letter-spacing:.06em;line-height:1.15}
+.hero h1{font-size:clamp(2.4rem,8vw,4.2rem);font-weight:800;text-shadow:0 6px 26px rgba(0,0,0,.5)}
+.hero h1 .en{display:block;font-size:clamp(.75rem,2.6vw,1rem);font-weight:500;letter-spacing:.4em;color:var(--gold-l);margin-top:16px;text-indent:.4em}
+.hero .tagline{margin-top:26px;font-size:clamp(1rem,3.2vw,1.28rem);color:var(--cream);text-shadow:0 2px 12px rgba(0,0,0,.6)}
+.hero .place{margin-top:14px;font-size:.85rem;letter-spacing:.24em;color:var(--gold-l)}
+.scroll-cue{position:absolute;bottom:26px;left:50%;transform:translateX(-50%);z-index:2;color:var(--gold-l);font-size:.66rem;letter-spacing:.3em;writing-mode:vertical-rl;opacity:.85}
+
+/* ===== section common ===== */
+section{padding:78px 0}
+.tag{display:inline-flex;align-items:center;gap:8px;font-family:'Shippori Mincho',serif;font-size:.72rem;letter-spacing:.32em;color:var(--gold);margin-bottom:14px}
+.tag .hex{color:var(--gold);width:.7em;height:.7em}
+h2.ttl{font-size:clamp(1.6rem,4.6vw,2.15rem);font-weight:700;margin-bottom:10px}
+h2.ttl .en{display:block;font-size:.72rem;font-weight:500;letter-spacing:.32em;color:#b7a06a;margin-top:8px;font-family:'Shippori Mincho',serif}
+.lead{color:#5c5344;font-size:.98rem;margin-bottom:6px}
+
+/* ===== concept ===== */
+.concept{background:var(--green);color:var(--cream);position:relative}
+.concept .tag{color:var(--gold-l)}
+.concept .tag .hex{color:var(--gold-l)}
+.concept h2.ttl{color:#fff}
+.concept h2.ttl .en{color:var(--gold-l)}
+.concept .body p{font-size:1.02rem;margin-bottom:18px;color:#e8e2d3}
+.concept .body p:last-child{margin-bottom:0}
+.pillars{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:18px;margin-top:38px}
+.pillar{background:rgba(255,255,255,.05);border:1px solid var(--line);border-radius:4px;padding:26px 22px;text-align:center;position:relative}
+.pillar .num{font-family:'Shippori Mincho',serif;font-size:.7rem;letter-spacing:.24em;color:var(--gold-l);margin-bottom:12px}
+.pillar .hexico{width:44px;height:48px;margin:0 auto 14px;display:flex;align-items:center;justify-content:center;background:var(--gold);clip-path:polygon(50% 0,100% 25%,100% 75%,50% 100%,0 75%,0 25%);color:var(--green-d);font-size:1.35rem}
+.pillar h3{font-size:1.1rem;color:#fff;margin-bottom:8px}
+.pillar p{font-size:.86rem;color:#cfc8b8;line-height:1.8}
+
+/* ===== menu ===== */
+.menu{background:var(--paper)}
+.menu-note{font-size:.8rem;color:#8a7f6c;margin-bottom:34px}
+.menu-cat{margin-bottom:40px}
+.menu-cat:last-child{margin-bottom:0}
+.menu-cat > h3{display:flex;align-items:center;gap:12px;font-size:1.28rem;color:var(--green);margin-bottom:6px}
+.menu-cat > h3 .hex{color:var(--gold);width:.62em;height:.62em}
+.menu-cat .set{font-size:.82rem;color:#8a7f6c;margin-bottom:20px;padding-left:2px}
+.rows{border-top:1px solid var(--line)}
+.row{display:flex;justify-content:space-between;align-items:baseline;gap:14px;padding:15px 4px;border-bottom:1px solid var(--line);flex-wrap:wrap}
+.row .name{font-family:'Shippori Mincho',serif;font-weight:600;font-size:1rem;color:var(--ink)}
+.row .name small{display:block;font-family:'Noto Serif JP',serif;font-weight:400;font-size:.76rem;color:#8a7f6c;margin-top:2px}
+.row .prices{display:flex;gap:16px;flex-wrap:wrap;justify-content:flex-end;font-family:'Shippori Mincho',serif}
+.row .p{white-space:nowrap;font-size:.92rem;color:var(--ink)}
+.row .p b{color:var(--green);font-size:1.02rem}
+.row .p span{font-size:.72rem;color:#a99a76;margin-right:4px}
+
+/* ===== gallery ===== */
+.gallery{background:var(--charcoal);color:var(--cream)}
+.gallery .tag{color:var(--gold-l)}
+.gallery .tag .hex{color:var(--gold-l)}
+.gallery h2.ttl{color:#fff}
+.gallery h2.ttl .en{color:var(--gold-l)}
+.grid{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:150px;gap:10px;margin-top:34px}
+.grid figure{overflow:hidden;border-radius:3px;position:relative}
+.grid img{width:100%;height:100%;object-fit:cover;transition:transform .6s ease}
+.grid figure:hover img{transform:scale(1.06)}
+.grid .big{grid-column:span 2;grid-row:span 2}
+.grid .wide{grid-column:span 2}
+@media(max-width:640px){
+  .grid{grid-template-columns:repeat(2,1fr);grid-auto-rows:120px}
+  .grid .big{grid-column:span 2;grid-row:span 2}
+  .grid .wide{grid-column:span 2}
+}
+
+/* ===== info ===== */
+.info{background:var(--green-d);color:var(--cream)}
+.info .tag{color:var(--gold-l)}
+.info .tag .hex{color:var(--gold-l)}
+.info h2.ttl{color:#fff}
+.info h2.ttl .en{color:var(--gold-l)}
+.info-grid{display:grid;grid-template-columns:1fr;gap:2px;margin-top:30px;border:1px solid var(--line);border-radius:4px;overflow:hidden}
+.info-row{display:grid;grid-template-columns:130px 1fr;gap:0}
+.info-row dt{background:rgba(255,255,255,.05);padding:16px 20px;font-family:'Shippori Mincho',serif;font-size:.86rem;color:var(--gold-l);letter-spacing:.08em;border-bottom:1px solid var(--line)}
+.info-row dd{padding:16px 20px;font-size:.92rem;color:#e8e2d3;border-bottom:1px solid var(--line)}
+.info-row:last-child dt,.info-row:last-child dd{border-bottom:none}
+.info-row dd a{color:var(--gold-l);text-decoration:none;border-bottom:1px solid var(--line)}
+.info-row dd a:hover{color:#fff}
+.btns{display:flex;flex-wrap:wrap;gap:14px;margin-top:30px}
+.btn{display:inline-flex;align-items:center;gap:9px;padding:14px 26px;border-radius:3px;font-family:'Shippori Mincho',serif;font-size:.9rem;letter-spacing:.06em;text-decoration:none;transition:.25s}
+.btn.map{background:var(--gold);color:var(--green-d)}
+.btn.map:hover{background:var(--gold-l)}
+.btn.out{border:1px solid var(--gold);color:var(--gold-l)}
+.btn.out:hover{background:rgba(198,163,83,.14)}
+@media(max-width:520px){.info-row{grid-template-columns:100px 1fr}}
+
+/* ===== footer ===== */
+footer{background:var(--ink);color:#9c9484;text-align:center;padding:48px 22px;font-size:.78rem;line-height:1.9}
+footer .fx{color:var(--gold);font-size:1.1rem;margin-bottom:14px}
+footer a{color:var(--gold-l);text-decoration:none}
+footer .disclaimer{max-width:640px;margin:14px auto 0;color:#7d7568;font-size:.74rem}
+footer .credit{margin-top:20px;color:#6b6457}
+</style>
+</head>
+<body>
+
+<!-- ===== HERO ===== -->
+<header class="hero">
+  <div class="hero-inner">
+    <div class="badge">STEAK HOUSE ・ KANAZAWA</div>
+    <div class="hex-frame"><span>六角堂</span></div>
+    <h1>ステーキハウス 六角堂<span class="en">ROKKAKUDO</span></h1>
+    <p class="tagline">目の前の鉄板で、一枚を焼き上げる。</p>
+    <p class="place">石川県金沢市 観音町</p>
+  </div>
+  <div class="scroll-cue">SCROLL</div>
+</header>
+
+<!-- ===== CONCEPT ===== -->
+<section class="concept" id="concept">
+  <div class="wrap">
+    <span class="tag"><span class="hex"></span>CONCEPT</span>
+    <h2 class="ttl">鉄板の前で味わう、一枚のステーキ<span class="en">TEPPAN STEAK</span></h2>
+    <div class="body">
+      <p>金沢・観音町の松並木沿いに佇む「ステーキハウス 六角堂」。六角形の屋根と緑の庇、玄関を守る一対の狛犬が、訪れる人を静かに迎えます。</p>
+      <p>カウンター越しの鉄板で、輸入牛から能登牛・特選黒毛和牛まで、その日のお肉を目の前で焼き上げるのが六角堂の流儀。香ばしいガーリックチップ、シャキッとしたもやし、たっぷりのサラダとご飯を添えて、一枚のステーキをゆっくりと味わえます。</p>
+    </div>
+    <div class="pillars">
+      <div class="pillar">
+        <div class="num">— 01 —</div>
+        <div class="hexico">🔥</div>
+        <h3>目の前の鉄板焼き</h3>
+        <p>カウンターの鉄板で焼き上げる、できたてのステーキ。</p>
+      </div>
+      <div class="pillar">
+        <div class="num">— 02 —</div>
+        <div class="hexico">🥩</div>
+        <h3>選べるお肉</h3>
+        <p>輸入牛・国産牛・黒毛和牛・能登牛。部位とグラム数も選べます。</p>
+      </div>
+      <div class="pillar">
+        <div class="num">— 03 —</div>
+        <div class="hexico">🧄</div>
+        <h3>香ばしい名脇役</h3>
+        <p>カリッと揚げたガーリックチップともやしが、旨みを引き立てる。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== MENU ===== -->
+<section class="menu" id="menu">
+  <div class="wrap">
+    <span class="tag"><span class="hex"></span>MENU</span>
+    <h2 class="ttl">お品書き<span class="en">LUNCH SELECTION</span></h2>
+    <p class="lead">ランチのステーキ各種をご紹介します。</p>
+    <p class="menu-note">※価格はすべて税込。訪問時（2026年3月時点）のメニューです。ディナー・季節メニュー・最新の内容は公式サイトをご覧ください。</p>
+
+    <div class="menu-cat">
+      <h3><span class="hex"></span>ランチステーキ定食</h3>
+      <p class="set">サラダ／ステーキ／ご飯／味噌汁／香の物</p>
+      <div class="rows">
+        <div class="row">
+          <div class="name">輸入牛 ロース</div>
+          <div class="prices">
+            <span class="p"><span>150g</span><b>¥3,190</b></span>
+            <span class="p"><span>200g</span><b>¥4,070</b></span>
+            <span class="p"><span>250g</span><b>¥4,950</b></span>
+          </div>
+        </div>
+        <div class="row">
+          <div class="name">輸入牛 ヒレ</div>
+          <div class="prices">
+            <span class="p"><span>100g</span><b>¥2,750</b></span>
+            <span class="p"><span>150g</span><b>¥3,850</b></span>
+          </div>
+        </div>
+        <div class="row">
+          <div class="name">国産牛（交雑種）ロース</div>
+          <div class="prices">
+            <span class="p"><span>150g</span><b>¥5,830</b></span>
+            <span class="p"><span>200g</span><b>¥7,425</b></span>
+          </div>
+        </div>
+        <div class="row">
+          <div class="name">黒毛和牛 ロース</div>
+          <div class="prices">
+            <span class="p"><span>150g</span><b>¥6,930</b></span>
+            <span class="p"><span>200g</span><b>¥8,910</b></span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="menu-cat">
+      <h3><span class="hex"></span>六角堂ランチコース</h3>
+      <p class="set">前菜／スープ／季節の魚介鉄板焼き／サラダ／厳選ステーキ100g／ご飯／味噌汁／香の物／デザート／コーヒー又は紅茶</p>
+      <div class="rows">
+        <div class="row"><div class="name">輸入牛 <small>ヒレ又はロース</small></div><div class="prices"><span class="p"><b>¥6,050</b></span></div></div>
+        <div class="row"><div class="name">国産牛（交雑種）<small>ヒレ又はロース</small></div><div class="prices"><span class="p"><b>¥7,700</b></span></div></div>
+        <div class="row"><div class="name">黒毛和牛 <small>ヒレ又はロース</small></div><div class="prices"><span class="p"><b>¥9,130</b></span></div></div>
+        <div class="row"><div class="name">能登牛プレミアム <small>ロース</small></div><div class="prices"><span class="p"><b>¥9,900</b></span></div></div>
+        <div class="row"><div class="name">特選黒毛和牛 <small>ヒレ</small></div><div class="prices"><span class="p"><b>¥10,450</b></span></div></div>
+      </div>
+    </div>
+
+    <div class="menu-cat">
+      <h3><span class="hex"></span>卯辰山ランチ</h3>
+      <p class="set">平日限定・月替わり／旬の魚介と焼き野菜／サラダ／輸入牛ヒレステーキ100g／ご飯／味噌汁／香の物／デザート／コーヒー</p>
+      <div class="rows">
+        <div class="row"><div class="name">月替わりサービスランチ</div><div class="prices"><span class="p"><b>¥3,960</b></span></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== GALLERY ===== -->
+<section class="gallery" id="gallery">
+  <div class="wrap">
+    <span class="tag"><span class="hex"></span>GALLERY</span>
+    <h2 class="ttl">六角堂の風景<span class="en">PHOTO</span></h2>
+    <div class="grid">
+      <figure class="big"><img src="../../images/odekake/rokkakudo/IMG_4307.jpg" alt="鉄板ステーキ定食一式"></figure>
+      <figure class="wide"><img src="../../images/odekake/rokkakudo/IMG_4308.jpg" alt="焼き上げたステーキとガーリックチップ"></figure>
+      <figure><img src="../../images/odekake/rokkakudo/IMG_4305.jpg" alt="ステーキとサラダ"></figure>
+      <figure><img src="../../images/odekake/rokkakudo/IMG_4309.jpg" alt="ご飯・味噌汁とステーキ"></figure>
+      <figure class="wide"><img src="../../images/odekake/rokkakudo/IMG_4302.jpg" alt="六角堂の玄関と狛犬"></figure>
+      <figure><img src="../../images/odekake/rokkakudo/IMG_4306.jpg" alt="鉄板の前のステーキとサラダ"></figure>
+      <figure><img src="../../images/odekake/rokkakudo/IMG_4301.jpg" alt="六角堂の外観"></figure>
+    </div>
+  </div>
+</section>
+
+<!-- ===== INFO ===== -->
+<section class="info" id="info">
+  <div class="wrap">
+    <span class="tag"><span class="hex"></span>INFORMATION</span>
+    <h2 class="ttl">店舗情報<span class="en">ACCESS</span></h2>
+    <dl class="info-grid">
+      <div class="info-row"><dt>店名</dt><dd>ステーキハウス 六角堂（Steakhouse Rokkakudo）</dd></div>
+      <div class="info-row"><dt>住所</dt><dd>〒920-0838 石川県金沢市観音町３丁目４−４２</dd></div>
+      <div class="info-row"><dt>ジャンル</dt><dd>鉄板ステーキ・ステーキハウス</dd></div>
+      <div class="info-row"><dt>公式サイト</dt><dd><a href="https://www.asadaya.co.jp/rokkakudou/" target="_blank" rel="noopener">asadaya.co.jp/rokkakudou</a></dd></div>
+      <div class="info-row"><dt>Instagram</dt><dd><a href="https://www.instagram.com/rokkakudo/" target="_blank" rel="noopener">@rokkakudo</a></dd></div>
+      <div class="info-row"><dt>食べログ</dt><dd><a href="https://tabelog.com/ishikawa/A1701/A170101/17000063/" target="_blank" rel="noopener">食べログのページ</a></dd></div>
+    </dl>
+    <div class="btns">
+      <a class="btn map" href="https://www.google.com/maps/search/?api=1&query=%E3%82%B9%E3%83%86%E3%83%BC%E3%82%AD%E3%83%8F%E3%82%A6%E3%82%B9%E5%85%AD%E8%A7%92%E5%A0%82+%E9%87%91%E6%B2%A2%E5%B8%82%E8%A6%B3%E9%9F%B3%E7%94%BA" target="_blank" rel="noopener">📍 Googleマップで見る</a>
+      <a class="btn out" href="https://www.asadaya.co.jp/rokkakudou/" target="_blank" rel="noopener">公式サイトへ</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+  <div class="fx"><span class="hex"></span></div>
+  <p>ステーキハウス 六角堂 ファンページ</p>
+  <p class="disclaimer">このページは一来店客が個人的に作成した非公式のファンページです。掲載写真はすべて訪問時に自分で撮影したものです。メニュー・価格・営業内容は変更される場合がありますので、最新情報は必ず公式サイト・店舗へご確認ください。</p>
+  <p class="credit">Produced by <a href="https://chiwacogi-studio.pages.dev/">チワコギー工房</a></p>
+</footer>
+
+</body>
+</html>
