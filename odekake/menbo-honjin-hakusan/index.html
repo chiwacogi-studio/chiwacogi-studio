@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>めん房本陣 白山店 | 行ってきたシリーズ #08 - チワコギー工房</title>
+<meta name="description" content="白山の伏流水で仕込む自然派熟成うどん「結」と超粗挽きそば「翠」。めん房本陣 白山店の非公式ファンページ。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Zen+Old+Mincho:wght@500;700;900&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#1c2b47;
+  --navy-deep:#0f1c33;
+  --cream:#f7f2e6;
+  --cream-deep:#efe6d3;
+  --vermillion:#b83c2e;
+  --gold:#b79a5c;
+  --ink:#22242a;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+body{
+  font-family:'Zen Kaku Gothic New',sans-serif;
+  background:var(--cream);
+  color:var(--ink);
+  line-height:1.85;
+}
+h1,h2,h3,.mincho{font-family:'Zen Old Mincho',serif}
+img{max-width:100%;display:block}
+a{color:inherit}
+.wrap{max-width:920px;margin:0 auto;padding:0 24px}
+
+/* ===== ヒーロー ===== */
+.hero{position:relative;min-height:92vh;display:flex;align-items:flex-end;overflow:hidden}
+.hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:saturate(1.05)}
+.hero::after{
+  content:"";position:absolute;inset:0;
+  background:linear-gradient(180deg,rgba(15,28,51,.15) 0%,rgba(15,28,51,.35) 45%,rgba(15,28,51,.92) 100%);
+}
+.hero-inner{position:relative;z-index:2;padding:0 24px 56px;width:100%;color:#fdfbf5}
+.badge{
+  display:inline-block;background:var(--vermillion);color:#fff;
+  font-size:.78rem;letter-spacing:.12em;padding:6px 16px;border-radius:999px;
+  margin-bottom:18px;font-weight:700;
+}
+.hero h1{font-size:clamp(2.1rem,6.5vw,3.6rem);font-weight:900;letter-spacing:.06em;text-shadow:0 2px 18px rgba(0,0,0,.35)}
+.hero p{margin-top:14px;font-size:1rem;opacity:.92;max-width:32em}
+
+/* ===== 区切り帯（店のメニューの縦帯モチーフ） ===== */
+.kugiri{height:14px;display:flex}
+.kugiri span{flex:1}
+.kugiri .a{background:var(--navy)}
+.kugiri .b{background:var(--vermillion)}
+.kugiri .c{background:var(--gold)}
+
+section{padding:76px 0}
+.section-title{
+  font-size:1.9rem;font-weight:700;color:var(--navy);
+  display:flex;align-items:center;gap:14px;margin-bottom:34px;
+}
+.section-title::before{
+  content:"";width:10px;height:10px;border-radius:50%;
+  border:2px solid var(--vermillion);flex-shrink:0;
+}
+
+/* ===== こだわり(コンセプト) ===== */
+.concept{display:grid;grid-template-columns:1.15fr .85fr;gap:48px;align-items:center}
+.concept p{font-size:1.02rem}
+.concept-img{position:relative}
+.concept-img .ring{
+  position:absolute;inset:-14px;border:2px solid var(--gold);border-radius:14px;pointer-events:none;
+}
+.concept-img img{border-radius:10px;box-shadow:0 18px 40px rgba(28,43,71,.22)}
+
+/* ===== お品書き ===== */
+.menu-section{background:var(--navy);color:var(--cream)}
+.menu-section .section-title{color:var(--cream)}
+.menu-section .section-title::before{border-color:var(--gold)}
+.menu-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px 40px}
+.menu-cat{margin-bottom:10px;font-size:.86rem;letter-spacing:.14em;color:var(--gold);font-weight:700;grid-column:1/-1;margin-top:22px}
+.menu-cat:first-of-type{margin-top:0}
+.menu-item{
+  display:flex;align-items:baseline;gap:8px;padding:10px 0;
+  border-bottom:1px dashed rgba(247,242,230,.25);
+}
+.menu-item .name{flex:1;font-size:.98rem}
+.menu-item .name small{display:block;font-size:.78rem;opacity:.7;margin-top:2px}
+.menu-item .price{font-weight:700;font-family:'Zen Old Mincho',serif;color:var(--cream)}
+@media(max-width:640px){.menu-grid{grid-template-columns:1fr}}
+
+/* ===== ギャラリー ===== */
+.gallery{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+.gallery figure{background:#fff;padding:10px 10px 16px;border:1px solid var(--cream-deep);box-shadow:0 8px 22px rgba(28,43,71,.08)}
+.gallery figure img{aspect-ratio:4/3;object-fit:cover}
+.gallery figcaption{margin-top:10px;font-size:.85rem;color:var(--navy);text-align:center;letter-spacing:.03em}
+@media(max-width:640px){.gallery{grid-template-columns:1fr}}
+
+/* ===== 店舗情報 ===== */
+.info table{width:100%;border-collapse:collapse}
+.info th,.info td{text-align:left;padding:14px 0;border-bottom:1px solid var(--cream-deep);vertical-align:top}
+.info th{width:120px;color:var(--navy);font-weight:700;font-family:'Zen Old Mincho',serif}
+.map-btn{
+  display:inline-block;margin-top:28px;background:var(--vermillion);color:#fff;
+  padding:14px 32px;border-radius:999px;text-decoration:none;font-weight:700;letter-spacing:.05em;
+}
+.map-btn:hover{opacity:.9}
+
+footer{background:var(--navy-deep);color:rgba(247,242,230,.75);padding:40px 24px;font-size:.82rem;text-align:center}
+footer a{color:var(--gold);text-decoration:underline}
+</style>
+</head>
+<body>
+
+<div class="hero">
+  <img src="../../images/odekake/menbo-honjin-hakusan/hero-chikinnanban.jpg" alt="めん房本陣 白山店のチキン南蛮セット">
+  <div class="hero-inner">
+    <span class="badge">行ってきたシリーズ #08</span>
+    <h1>めん房本陣 白山店</h1>
+    <p>白山の伏流水で仕込む、こだわりの十割蕎麦と自然派熟成うどん。加賀の食材とじっくり向き合う一杯を。</p>
+  </div>
+</div>
+
+<div class="kugiri"><span class="a"></span><span class="b"></span><span class="c"></span></div>
+
+<section class="concept-section">
+  <div class="wrap concept">
+    <div>
+      <h2 class="section-title">当店のこだわり</h2>
+      <p>
+        北海道産小麦を無添加・無着色でじっくり寝かせ、白山の伏流水で練り上げた自然派熟成うどん「結（ゆい）」。
+        そばの実を超粗挽きにし、噛むほどに広がる濃厚な香りとざらりとした食感に仕上げた「翠（すい）」。
+        麺はどちらもこだわりの逸品として、うどん・そば専門店ならではの一杯をご用意しております。
+      </p>
+      <p style="margin-top:16px">
+        低温調理でしっとりと仕上げた鴨肉のせいろや、四種の薬味で楽しむ贅沢御膳など、季節ごとの創作つけ汁麺も充実。
+        白山店の落ち着いた店内で、素材と仕込みに手間を惜しまない一杯をごゆっくりお楽しみください。
+      </p>
+    </div>
+    <div class="concept-img">
+      <div class="ring"></div>
+      <img src="../../images/odekake/menbo-honjin-hakusan/mendawari.jpg" alt="自然派熟成うどん「結」と超粗挽きそば「翠」の麺" loading="lazy">
+    </div>
+  </div>
+</section>
+
+<section class="menu-section">
+  <div class="wrap">
+    <h2 class="section-title">お品書き</h2>
+    <div class="menu-grid">
+
+      <div class="menu-cat">こだわりのそば・うどん</div>
+      <div class="menu-item"><span class="name">超粗挽きそば「翠（すい）」</span><span class="price">750円</span></div>
+      <div class="menu-item"><span class="name">自然派熟成うどん「結（ゆい）」</span><span class="price">750円</span></div>
+      <div class="menu-item"><span class="name">低温仕込み鴨南蛮そば<small>店長のおすすめ</small></span><span class="price">1,430円</span></div>
+      <div class="menu-item"><span class="name">旨味染み込む能登牛肉うどん</span><span class="price">1,650円</span></div>
+      <div class="menu-item"><span class="name">カツカレーうどん<small>あったか麺 人気No.1</small></span><span class="price">1,250円</span></div>
+
+      <div class="menu-cat">御膳・セット</div>
+      <div class="menu-item"><span class="name">雅（みやび）姫御膳</span><span class="price">1,980円</span></div>
+      <div class="menu-item"><span class="name">晴れればれ贅沢御膳<small>店長のおすすめ</small></span><span class="price">1,930円</span></div>
+      <div class="menu-item"><span class="name">あっぱれ御膳<small>四種の薬味付き</small></span><span class="price">1,480円</span></div>
+      <div class="menu-item"><span class="name">チキン南蛮セット<small>自家製タルタルソース付き・ガッツリ人気No.1</small></span><span class="price">1,240円</span></div>
+
+    </div>
+    <p style="margin-top:28px;font-size:.82rem;opacity:.7">※価格は税込表示・訪問時（2026年7月）のものです。最新の価格は店舗にてご確認ください。</p>
+  </div>
+</section>
+
+<section class="gallery-section">
+  <div class="wrap">
+    <h2 class="section-title">フォトギャラリー</h2>
+    <div class="gallery">
+      <figure>
+        <img src="../../images/odekake/menbo-honjin-hakusan/chikinnanban-up.jpg" alt="自家製タルタルソースのチキン南蛮アップ" loading="lazy">
+        <figcaption>自家製タルタルソースがたっぷりのチキン南蛮</figcaption>
+      </figure>
+      <figure>
+        <img src="../../images/odekake/menbo-honjin-hakusan/kashiwaten-udon.jpg" alt="夏野菜かしわ天うどん" loading="lazy">
+        <figcaption>季節の野菜天とかしわ天がのったうどん</figcaption>
+      </figure>
+      <figure>
+        <img src="../../images/odekake/menbo-honjin-hakusan/kashiwaten-up.jpg" alt="夏野菜天ぷらのアップ" loading="lazy">
+        <figcaption>茄子・オクラなど夏野菜天のサクサク衣</figcaption>
+      </figure>
+      <figure>
+        <img src="../../images/odekake/menbo-honjin-hakusan/hero-chikinnanban.jpg" alt="チキン南蛮セット全体" loading="lazy">
+        <figcaption>そば・ご飯大盛りも選べるチキン南蛮セット</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<section class="info">
+  <div class="wrap">
+    <h2 class="section-title">店舗情報</h2>
+    <table>
+      <tr><th>名前</th><td>めん房本陣 白山店</td></tr>
+      <tr><th>場所</th><td>〒924-0803 石川県白山市乾町90-1</td></tr>
+      <tr><th>営業時間</th><td>月〜金 11:00〜L.O.15:00／17:30〜L.O.21:00<br>土日祝 11:00〜L.O.21:00</td></tr>
+      <tr><th>公式サイト</th><td><a href="https://menbo-honjin.com/" target="_blank" rel="noopener">menbo-honjin.com</a></td></tr>
+      <tr><th>Instagram</th><td><a href="https://www.instagram.com/menbo_honjin_hakusan/" target="_blank" rel="noopener">@menbo_honjin_hakusan</a></td></tr>
+      <tr><th>食べログ</th><td><a href="https://tabelog.com/ishikawa/A1702/A170203/17010197/" target="_blank" rel="noopener">食べログでみる</a></td></tr>
+    </table>
+    <a class="map-btn" href="https://www.google.com/maps/search/?api=1&query=%E3%82%81%E3%82%93%E6%88%BF%E6%9C%AC%E9%99%A3%E7%99%BD%E5%B1%B1%E5%BA%97" target="_blank" rel="noopener">📍 Googleマップで見る</a>
+  </div>
+</section>
+
+<footer>
+  <p>このページは <a href="https://chiwacogi-studio.pages.dev/">チワコギー工房</a> の「行ってきたシリーズ」で勝手に作ったファンページです。<br>
+  掲載写真はすべて自分で撮影したものです。お店・施設の公式ページではありません。</p>
+</footer>
+
+</body>
+</html>
