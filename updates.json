@@ -1,25 +1,146 @@
 [
-  {"date": "2026-07-09", "icon": "🎤", "text": "新曲「Come the Summer / 南の岸で」南国の浜辺で夏を待つ英語トロピカルバラードMV公開", "url": "https://youtu.be/rd_ydMrmVc8"},
-  {"date": "2026-07-08", "icon": "🍜", "text": "行ってきた #08「めん房本陣 白山店」ファンページ公開", "url": "odekake/menbo-honjin-hakusan/"},
-  {"date": "2026-07-08", "icon": "🎤", "text": "新曲「Still Wagging」2匹の犬への感謝を歌った英語バラードMV公開", "url": "https://youtu.be/WYhvtMacPQ0"},
-  {"date": "2026-07-07", "icon": "🎼", "text": "新BGM「深夜の喫茶店 / Midnight Coffee Shop」ジャズバー風Lo-fi公開", "url": "https://youtu.be/anqFOTxzjAU"},
-  {"date": "2026-07-07", "icon": "🎤", "text": "新曲「Glowing in the Dark」AIとの夜のネオン会話・英語シンセポップMV公開", "url": "https://youtu.be/FqqUCbju9ms"},
-  {"date": "2026-07-07", "icon": "☕", "text": "行ってきた #07「むさしの森珈琲 金沢入江店」ファンページ公開", "url": "odekake/musashino-mori-coffee/"},
-  {"date": "2026-07-07", "icon": "🍽️", "text": "行ってきた #06「ステーキハウス 六角堂」ファンページ公開", "url": "odekake/rokkakudo/"},
-  {"date": "2026-07-06", "icon": "🏀", "text": "ブログ「金沢武士団 新スタッフ3名加入＆PFUブルーキャッツ最新まとめ」公開", "url": "https://goruu-blog.com/ishikawa-sports-news-20260706/"},
-  {"date": "2026-07-06", "icon": "🛒", "text": "ブログ「コストコ購入レポート 三元豚のとんかつ・フルーツヨーグルトほか」公開", "url": "https://goruu-blog.com/costco-haul-20260706/"},
-  {"date": "2026-07-06", "icon": "⚽", "text": "ブログ「ツエーゲン金沢 EVO BAG・GKクリニックなど8月の情報4本まとめ」公開", "url": "https://goruu-blog.com/zweigen-2026-0706-news/"},
-  {"date": "2026-07-06", "icon": "🎤", "text": "新曲「夜明けの改札」MV公開", "url": "https://youtu.be/Ghc99M59JvI"},
-  {"date": "2026-07-05", "icon": "🎼", "text": "新BGM「チェロ追加・クラシカル×Lo-fi」公開", "url": "https://youtu.be/nZXV7qCX5Bk"},
-  {"date": "2026-07-05", "icon": "🍽️", "text": "行ってきた #05「チュー松任宮永店」ファンページ公開", "url": "odekake/chu-miyanaga/"},
-  {"date": "2026-07-05", "icon": "🎤", "text": "新曲「Cardboard Crown」MV公開", "url": "https://youtu.be/77QA0OLLd-o"},
-  {"date": "2026-07-05", "icon": "🍽️", "text": "行ってきた #04「麺処こよみ」ファンページ公開", "url": "odekake/koyomi-apita-matto/"},
-  {"date": "2026-07-04", "icon": "🎤", "text": "新曲「夏祭り、あの日のまま」MV公開", "url": "https://youtu.be/Rc301UHKmwg"},
-  {"date": "2026-07-04", "icon": "🍽️", "text": "行ってきた #03「食３丁目」ファンページ＆ブログ公開", "url": "odekake/shoku-sanchome/"},
-  {"date": "2026-07-04", "icon": "🏠", "text": "HPをリニューアル！楽曲・スタンプ・行ってきたの専用ページを新設", "url": ""},
-  {"date": "2026-07-04", "icon": "🎼", "text": "新BGM「月夜の和室 琴とアンビエント / Moonlit Tatami」公開", "url": "https://youtu.be/0-pNJvTW8wo"},
-  {"date": "2026-07-04", "icon": "🍽️", "text": "行ってきた #02「おばん菜 焼肉 みさご」ファンページ＆ブログ公開", "url": "odekake/misago-obanzai-yakiniku/"},
-  {"date": "2026-07-03", "icon": "🍽️", "text": "行ってきた #01「Bistro A table」ファンページ＆ブログ公開", "url": "odekake/bistro-a-table/"},
-  {"date": "2026-07-03", "icon": "🎤", "text": "新曲「Two Little Tails」MV公開", "url": "https://youtu.be/DVnhgmxbR5s"},
-  {"date": "2026-07-02", "icon": "🐶", "text": "LINEスタンプ第33弾「フレブルの夏バテ日常」審査申請中", "url": "stickers.html"}
+  {
+    "date": "2026-07-10",
+    "icon": "🎼",
+    "text": "新BGM「考えるのをやめて、眠る｜夜のせせらぎと和アンビエント」20曲・約64分公開",
+    "url": "https://youtu.be/4cVBOlTQNz8"
+  },
+  {
+    "date": "2026-07-09",
+    "icon": "🎤",
+    "text": "新曲「Come the Summer / 南の岸で」南国の浜辺で夏を待つ英語トロピカルバラードMV公開",
+    "url": "https://youtu.be/rd_ydMrmVc8"
+  },
+  {
+    "date": "2026-07-08",
+    "icon": "🍜",
+    "text": "行ってきた #08「めん房本陣 白山店」ファンページ公開",
+    "url": "odekake/menbo-honjin-hakusan/"
+  },
+  {
+    "date": "2026-07-08",
+    "icon": "🎤",
+    "text": "新曲「Still Wagging」2匹の犬への感謝を歌った英語バラードMV公開",
+    "url": "https://youtu.be/WYhvtMacPQ0"
+  },
+  {
+    "date": "2026-07-07",
+    "icon": "🎼",
+    "text": "新BGM「深夜の喫茶店 / Midnight Coffee Shop」ジャズバー風Lo-fi公開",
+    "url": "https://youtu.be/anqFOTxzjAU"
+  },
+  {
+    "date": "2026-07-07",
+    "icon": "🎤",
+    "text": "新曲「Glowing in the Dark」AIとの夜のネオン会話・英語シンセポップMV公開",
+    "url": "https://youtu.be/FqqUCbju9ms"
+  },
+  {
+    "date": "2026-07-07",
+    "icon": "☕",
+    "text": "行ってきた #07「むさしの森珈琲 金沢入江店」ファンページ公開",
+    "url": "odekake/musashino-mori-coffee/"
+  },
+  {
+    "date": "2026-07-07",
+    "icon": "🍽️",
+    "text": "行ってきた #06「ステーキハウス 六角堂」ファンページ公開",
+    "url": "odekake/rokkakudo/"
+  },
+  {
+    "date": "2026-07-06",
+    "icon": "🏀",
+    "text": "ブログ「金沢武士団 新スタッフ3名加入＆PFUブルーキャッツ最新まとめ」公開",
+    "url": "https://goruu-blog.com/ishikawa-sports-news-20260706/"
+  },
+  {
+    "date": "2026-07-06",
+    "icon": "🛒",
+    "text": "ブログ「コストコ購入レポート 三元豚のとんかつ・フルーツヨーグルトほか」公開",
+    "url": "https://goruu-blog.com/costco-haul-20260706/"
+  },
+  {
+    "date": "2026-07-06",
+    "icon": "⚽",
+    "text": "ブログ「ツエーゲン金沢 EVO BAG・GKクリニックなど8月の情報4本まとめ」公開",
+    "url": "https://goruu-blog.com/zweigen-2026-0706-news/"
+  },
+  {
+    "date": "2026-07-06",
+    "icon": "🎤",
+    "text": "新曲「夜明けの改札」MV公開",
+    "url": "https://youtu.be/Ghc99M59JvI"
+  },
+  {
+    "date": "2026-07-05",
+    "icon": "🎼",
+    "text": "新BGM「チェロ追加・クラシカル×Lo-fi」公開",
+    "url": "https://youtu.be/nZXV7qCX5Bk"
+  },
+  {
+    "date": "2026-07-05",
+    "icon": "🍽️",
+    "text": "行ってきた #05「チュー松任宮永店」ファンページ公開",
+    "url": "odekake/chu-miyanaga/"
+  },
+  {
+    "date": "2026-07-05",
+    "icon": "🎤",
+    "text": "新曲「Cardboard Crown」MV公開",
+    "url": "https://youtu.be/77QA0OLLd-o"
+  },
+  {
+    "date": "2026-07-05",
+    "icon": "🍽️",
+    "text": "行ってきた #04「麺処こよみ」ファンページ公開",
+    "url": "odekake/koyomi-apita-matto/"
+  },
+  {
+    "date": "2026-07-04",
+    "icon": "🎤",
+    "text": "新曲「夏祭り、あの日のまま」MV公開",
+    "url": "https://youtu.be/Rc301UHKmwg"
+  },
+  {
+    "date": "2026-07-04",
+    "icon": "🍽️",
+    "text": "行ってきた #03「食３丁目」ファンページ＆ブログ公開",
+    "url": "odekake/shoku-sanchome/"
+  },
+  {
+    "date": "2026-07-04",
+    "icon": "🏠",
+    "text": "HPをリニューアル！楽曲・スタンプ・行ってきたの専用ページを新設",
+    "url": ""
+  },
+  {
+    "date": "2026-07-04",
+    "icon": "🎼",
+    "text": "新BGM「月夜の和室 琴とアンビエント / Moonlit Tatami」公開",
+    "url": "https://youtu.be/0-pNJvTW8wo"
+  },
+  {
+    "date": "2026-07-04",
+    "icon": "🍽️",
+    "text": "行ってきた #02「おばん菜 焼肉 みさご」ファンページ＆ブログ公開",
+    "url": "odekake/misago-obanzai-yakiniku/"
+  },
+  {
+    "date": "2026-07-03",
+    "icon": "🍽️",
+    "text": "行ってきた #01「Bistro A table」ファンページ＆ブログ公開",
+    "url": "odekake/bistro-a-table/"
+  },
+  {
+    "date": "2026-07-03",
+    "icon": "🎤",
+    "text": "新曲「Two Little Tails」MV公開",
+    "url": "https://youtu.be/DVnhgmxbR5s"
+  },
+  {
+    "date": "2026-07-02",
+    "icon": "🐶",
+    "text": "LINEスタンプ第33弾「フレブルの夏バテ日常」審査申請中",
+    "url": "stickers.html"
+  }
 ]
