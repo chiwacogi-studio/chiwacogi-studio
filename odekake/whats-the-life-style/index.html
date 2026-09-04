@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>What's The Life Style | 行ってきたシリーズ #11 - チワコギー工房</title>
+<meta name="description" content="滋賀県大津市、蔦に覆われたテラスが印象的な琵琶湖畔のレストラン「What's The Life Style」のファン紹介ページ。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --deep:#33473a;
+    --terracotta:#c17a4e;
+    --ivory:#f7f1e4;
+    --ink:#2b2820;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  body{
+    font-family:'Noto Sans JP',sans-serif;
+    background:var(--ivory);
+    color:var(--ink);
+    line-height:1.85;
+  }
+  h1,h2,.serif{font-family:'Cormorant Garamond',serif;}
+  img{max-width:100%;display:block;}
+  a{color:inherit;}
+  .wrap{max-width:1080px;margin:0 auto;padding:0 24px;}
+
+  .hero{position:relative;height:92vh;min-height:560px;max-height:820px;overflow:hidden;}
+  .hero img{width:100%;height:100%;object-fit:cover;}
+  .hero::after{
+    content:"";position:absolute;inset:0;
+    background:linear-gradient(0deg, rgba(51,71,58,0.88) 0%, rgba(51,71,58,0.1) 55%);
+  }
+  .hero-inner{
+    position:absolute;left:0;right:0;bottom:0;
+    padding:44px 24px 56px;color:#fff;text-align:center;
+  }
+  .badge{
+    display:inline-block;border:1px solid rgba(255,255,255,0.7);
+    padding:5px 18px;border-radius:999px;font-size:0.78rem;
+    letter-spacing:0.15em;margin-bottom:20px;
+  }
+  .hero-inner h1{
+    font-size:clamp(2rem,5.5vw,3.4rem);
+    font-style:italic;font-weight:600;
+    text-shadow:0 2px 14px rgba(0,0,0,0.35);
+  }
+  .hero-inner p{margin-top:12px;font-size:1.05rem;opacity:0.9;letter-spacing:0.05em;}
+
+  .diagonal-top{
+    background:var(--ivory);
+    position:relative;
+    padding-top:80px;
+    box-shadow:0 -14px 26px -18px rgba(51,71,58,0.35);
+  }
+
+  section{padding:70px 0;}
+  .eyebrow{
+    text-align:center;color:var(--terracotta);
+    font-weight:700;letter-spacing:0.14em;font-size:0.82rem;margin-bottom:10px;
+  }
+  h2.section-title{
+    text-align:center;font-size:clamp(1.6rem,4vw,2.3rem);
+    color:var(--deep);margin-bottom:26px;font-style:italic;
+  }
+  .lead{max-width:680px;margin:0 auto 20px;text-align:center;color:#4d4a3f;}
+
+  .concept-wrap{
+    display:grid;grid-template-columns:1.1fr 1fr;gap:40px;align-items:center;
+  }
+  .concept-wrap img{border-radius:4px 60px 4px 4px;}
+  .concept-tags{margin-top:22px;display:flex;gap:10px;flex-wrap:wrap;}
+  .concept-tags span{
+    background:var(--deep);color:#fff;font-size:0.82rem;padding:6px 16px;border-radius:999px;
+  }
+
+  .menu-section{background:var(--deep);color:#fff;}
+  .menu-section h2.section-title{color:#fff;}
+  .menu-section .eyebrow{color:#e9c9a8;}
+  .menu-list{max-width:640px;margin:0 auto;}
+  .menu-item{
+    display:flex;justify-content:space-between;gap:16px;
+    padding:16px 0;border-bottom:1px dashed rgba(255,255,255,0.25);
+  }
+  .menu-item .name{font-family:'Cormorant Garamond',serif;font-size:1.15rem;font-style:italic;}
+  .menu-item .price{color:var(--terracotta);font-weight:700;white-space:nowrap;}
+  .menu-note{max-width:640px;margin:26px auto 0;font-size:0.85rem;opacity:0.82;text-align:center;}
+
+  /* horizontal scroll gallery */
+  .gallery-scroll{
+    display:flex;gap:20px;overflow-x:auto;padding:10px 24px 26px;
+    scroll-snap-type:x mandatory;
+  }
+  .gallery-scroll::-webkit-scrollbar{height:6px;}
+  .gallery-scroll::-webkit-scrollbar-thumb{background:var(--terracotta);border-radius:4px;}
+  .g-card{
+    flex:0 0 auto;width:280px;scroll-snap-align:start;
+    background:#fff;border-radius:14px;overflow:hidden;
+    box-shadow:0 10px 24px rgba(51,71,58,0.12);
+  }
+  .g-card img{width:100%;height:220px;object-fit:cover;}
+  .g-card .cap{padding:12px 16px;font-size:0.9rem;color:var(--deep);font-weight:500;}
+
+  .info-section .info-box{
+    max-width:600px;margin:0 auto;background:#fff;
+    border-radius:20px;padding:36px;box-shadow:0 10px 30px rgba(51,71,58,0.08);
+  }
+  .info-row{display:flex;gap:16px;padding:13px 0;border-bottom:1px solid rgba(0,0,0,0.07);}
+  .info-row:last-child{border-bottom:none;}
+  .info-row .label{flex:0 0 100px;color:var(--terracotta);font-weight:700;font-size:0.9rem;}
+  .map-btn{
+    display:block;text-align:center;background:var(--deep);color:#fff;
+    text-decoration:none;font-weight:700;padding:14px;border-radius:999px;margin-top:24px;
+  }
+
+  footer{background:var(--ink);color:#cfc9ba;padding:40px 24px;text-align:center;font-size:0.82rem;line-height:1.9;}
+  footer .fp-name{font-family:'Cormorant Garamond',serif;color:#fff;font-size:1.1rem;font-style:italic;margin-bottom:10px;}
+
+  @media(max-width:720px){
+    .concept-wrap{grid-template-columns:1fr;}
+  }
+</style>
+</head>
+<body>
+
+<div class="hero">
+  <img src="../../images/odekake/whats-the-life-style/hero-terrace.jpg" alt="蔦に覆われたテラス席の様子">
+  <div class="hero-inner">
+    <span class="badge">行ってきたシリーズ #11</span>
+    <h1>What's The Life Style</h1>
+    <p>琵琶湖畔、蔦とグリーンに包まれるテラスレストラン</p>
+  </div>
+</div>
+
+<div class="diagonal-top">
+  <div class="wrap">
+    <p class="eyebrow">CONCEPT</p>
+    <h2 class="section-title">緑に包まれて、庭でごはん。</h2>
+    <div class="concept-wrap">
+      <img src="../../images/odekake/whats-the-life-style/exterior-ivy.jpg" alt="蔦に覆われた外観">
+      <div>
+        <p>
+          建物全体を覆う蔦とグリーン、テラス席には吊り下げの照明。
+          「Slow Floor」「Portfolio Floor」「Family Floor」と3つの異なるフロアコンセプトを持ち、
+          愛犬と一緒に過ごせるテラス席では、庭にいるようなくつろいだ時間が流れます。
+        </p>
+        <div class="concept-tags">
+          <span>ペット同伴OK</span>
+          <span>テラス席</span>
+          <span>琵琶湖畔</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<section class="menu-section">
+  <div class="wrap">
+    <p class="eyebrow">MENU</p>
+    <h2 class="section-title">Menu（一例）</h2>
+    <div class="menu-list">
+      <div class="menu-item"><span class="name">季節のパスタ</span><span class="price">¥1,600</span></div>
+      <div class="menu-item"><span class="name">WHAT'Sの炭火焼きハンバーグ 150g</span><span class="price">¥1,880</span></div>
+      <div class="menu-item"><span class="name">特製タコライス</span><span class="price">¥1,600</span></div>
+      <div class="menu-item"><span class="name">ドリンクセット</span><span class="price">+¥350</span></div>
+    </div>
+    <p class="menu-note">価格は公式メニュー情報より。テラス（カフェフロア）ではサラダ・トースト・ワッフルなど軽食メニューも楽しめます。</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <p class="eyebrow">GALLERY</p>
+    <h2 class="section-title">テラスでの時間</h2>
+    <p class="lead">→ 横にスクロールできます</p>
+  </div>
+  <div class="gallery-scroll">
+    <div class="g-card"><img src="../../images/odekake/whats-the-life-style/table-drinks.jpg" alt="テラス席のドリンク" loading="lazy"><div class="cap">テラス席でひと休み</div></div>
+    <div class="g-card"><img src="../../images/odekake/whats-the-life-style/salad-toast.jpg" alt="サラダとトーストのプレート" loading="lazy"><div class="cap">サラダ＆トースト</div></div>
+    <div class="g-card"><img src="../../images/odekake/whats-the-life-style/waffle-soup.jpg" alt="ワッフルとスープのプレート" loading="lazy"><div class="cap">ワッフルプレート</div></div>
+    <div class="g-card"><img src="../../images/odekake/whats-the-life-style/pasta-egg.jpg" alt="目玉焼きのせパスタ" loading="lazy"><div class="cap">目玉焼きのせパスタ</div></div>
+    <div class="g-card"><img src="../../images/odekake/whats-the-life-style/dog-stroller.jpg" alt="愛犬もカートで一緒に" loading="lazy"><div class="cap">愛犬も一緒に</div></div>
+    <div class="g-card"><img src="../../images/odekake/whats-the-life-style/van-sign.jpg" alt="お店のロゴが入ったビンテージバン" loading="lazy"><div class="cap">目印のビンテージバン</div></div>
+  </div>
+</section>
+
+<section class="info-section">
+  <div class="wrap">
+    <p class="eyebrow">INFO</p>
+    <h2 class="section-title">店舗情報</h2>
+    <div class="info-box">
+      <div class="info-row"><div class="label">住所</div><div>滋賀県大津市衣川1-41-7</div></div>
+      <div class="info-row"><div class="label">営業時間</div><div>ランチ11:00〜16:00／ディナー17:00〜21:00（月・木〜日）</div></div>
+      <div class="info-row"><div class="label">定休日</div><div>火・水曜日</div></div>
+      <div class="info-row"><div class="label">電話</div><div>077-511-9429</div></div>
+      <a class="map-btn" href="https://www.google.com/maps/search/?api=1&query=What%27s+The+Life+Style+%E5%A4%A7%E6%B4%A5%E5%B8%82%E8%A1%A3%E5%B7%9D" target="_blank" rel="noopener">Googleマップで見る</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="fp-name">What's The Life Style — 行ってきたシリーズ #11</div>
+  <p>このページは チワコギー工房（https://chiwacogi-studio.pages.dev/）の「行ってきたシリーズ」で勝手に作ったファンページです。掲載写真はすべて自分で撮影したものです。お店・施設の公式ページではありません。</p>
+</footer>
+
+</body>
+</html>

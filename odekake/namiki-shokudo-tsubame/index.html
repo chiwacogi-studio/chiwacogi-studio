@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>なみ木食堂ツバメ | 行ってきたシリーズ #13 - チワコギー工房</title>
+<meta name="description" content="滋賀県高島市マキノ、メタセコイア並木のマキノピックランド内にある「なみ木食堂ツバメ」のファン紹介ページ。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Yuji+Syuku&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --green:#2f4a33;
+    --mustard:#c99a3c;
+    --cream:#f4ead6;
+    --ink:#2c2718;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  body{font-family:'Noto Sans JP',sans-serif;background:var(--cream);color:var(--ink);line-height:1.85;}
+  h1,h2,.brush{font-family:'Yuji Syuku',serif;}
+  img{max-width:100%;display:block;}
+  a{color:inherit;}
+  .wrap{max-width:1080px;margin:0 auto;padding:0 24px;}
+
+  .hero{position:relative;height:92vh;min-height:560px;max-height:820px;overflow:hidden;}
+  .hero img{width:100%;height:100%;object-fit:cover;}
+  .hero::after{content:"";position:absolute;inset:0;background:linear-gradient(0deg, rgba(47,74,51,0.92) 0%, rgba(47,74,51,0.05) 55%);}
+  .hero-inner{position:absolute;left:0;right:0;bottom:0;padding:44px 24px 56px;color:#fff;text-align:center;}
+  .badge{display:inline-block;background:var(--mustard);color:#2c2718;padding:5px 18px;border-radius:4px;font-size:0.78rem;letter-spacing:0.12em;margin-bottom:20px;font-weight:700;}
+  .hero-inner h1{font-size:clamp(1.9rem,5vw,3rem);line-height:1.6;text-shadow:0 2px 12px rgba(0,0,0,0.4);}
+  .hero-inner p{margin-top:12px;font-size:1.02rem;opacity:0.92;}
+
+  /* torn paper divider */
+  .torn{
+    height:36px;background:var(--cream);
+    clip-path:polygon(0% 100%,2% 40%,5% 90%,8% 20%,11% 70%,14% 10%,17% 60%,20% 100%,23% 30%,26% 80%,29% 15%,32% 65%,35% 100%,38% 25%,41% 75%,44% 10%,47% 55%,50% 100%,53% 20%,56% 70%,59% 15%,62% 60%,65% 100%,68% 30%,71% 80%,74% 10%,77% 65%,80% 100%,83% 20%,86% 70%,89% 15%,92% 60%,95% 100%,98% 30%,100% 80%,100% 100%);
+    margin-top:-1px;position:relative;z-index:2;
+  }
+
+  section{padding:64px 0;}
+  .eyebrow{text-align:center;color:var(--mustard);font-weight:700;letter-spacing:0.14em;font-size:0.82rem;margin-bottom:10px;}
+  h2.section-title{text-align:center;font-size:clamp(1.6rem,4vw,2.2rem);color:var(--green);margin-bottom:26px;}
+
+  .concept-box{max-width:720px;margin:0 auto;text-align:center;}
+  .concept-tags{margin-top:22px;display:flex;gap:10px;flex-wrap:wrap;justify-content:center;}
+  .concept-tags span{background:var(--green);color:#fff;font-size:0.82rem;padding:6px 16px;border-radius:4px;}
+
+  .menu-section{background:var(--green);color:#fff;}
+  .menu-section h2.section-title{color:#fff;}
+  .menu-section .eyebrow{color:#e3c877;}
+  .menu-list{max-width:660px;margin:0 auto;}
+  .menu-item{display:flex;justify-content:space-between;gap:16px;padding:15px 0;border-bottom:1px dashed rgba(255,255,255,0.25);}
+  .menu-item .name{font-size:1rem;}
+  .menu-item .price{color:var(--mustard);font-weight:700;white-space:nowrap;}
+  .menu-note{max-width:660px;margin:26px auto 0;font-size:0.85rem;opacity:0.85;text-align:center;}
+
+  /* magazine-style grid */
+  .mag-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    grid-auto-rows:140px;
+    gap:12px;
+  }
+  .mag-grid figure{position:relative;overflow:hidden;border-radius:8px;}
+  .mag-grid img{width:100%;height:100%;object-fit:cover;}
+  .mag-grid figcaption{
+    position:absolute;left:0;right:0;bottom:0;
+    background:linear-gradient(0deg,rgba(44,39,24,0.8),transparent);
+    color:#fff;font-size:0.8rem;padding:8px 10px;
+  }
+  .mag-grid .big{grid-column:span 2;grid-row:span 2;}
+
+  .info-section .info-box{max-width:600px;margin:0 auto;background:#fff;border-radius:16px;padding:34px;border:1px solid rgba(47,74,51,0.15);}
+  .info-row{display:flex;gap:16px;padding:13px 0;border-bottom:1px solid rgba(0,0,0,0.06);}
+  .info-row:last-child{border-bottom:none;}
+  .info-row .label{flex:0 0 96px;color:var(--mustard);font-weight:700;font-size:0.9rem;}
+  .map-btn{display:block;text-align:center;background:var(--green);color:#fff;text-decoration:none;font-weight:700;padding:14px;border-radius:4px;margin-top:24px;}
+
+  footer{background:var(--ink);color:#cfc9ba;padding:40px 24px;text-align:center;font-size:0.82rem;line-height:1.9;}
+  footer .fp-name{font-family:'Yuji Syuku',serif;color:#fff;font-size:1.1rem;margin-bottom:10px;}
+
+  @media(max-width:700px){
+    .mag-grid{grid-template-columns:repeat(2,1fr);grid-auto-rows:140px;}
+    .mag-grid .big{grid-column:span 2;grid-row:span 1;height:280px;}
+  }
+</style>
+</head>
+<body>
+
+<div class="hero">
+  <img src="../../images/odekake/namiki-shokudo-tsubame/hero-tunnel.jpg" alt="メタセコイア並木、マキノピックランドの入口トンネル">
+  <div class="hero-inner">
+    <span class="badge">行ってきたシリーズ #13</span>
+    <h1>並木の風とともに、<br>近江の郷土ごはん。</h1>
+    <p>なみ木食堂ツバメ（マキノピックランド内）</p>
+  </div>
+</div>
+<div class="torn"></div>
+
+<section>
+  <div class="wrap">
+    <p class="eyebrow">CONCEPT</p>
+    <h2 class="section-title">メタセコイア並木のふもとで、ひと休み。</h2>
+    <div class="concept-box">
+      <p>
+        日本の紅葉スポットとしても知られるメタセコイア並木、その入口にあるマキノピックランド内の食堂。
+        近江の郷土料理や地元食材を使った定食が並び、並木道を歩いたあとの腹ごしらえにぴったりです。
+        近くでは馬車での並木周遊も楽しめます。
+      </p>
+      <div class="concept-tags">
+        <span>近江の郷土料理</span>
+        <span>メタセコイア並木すぐ</span>
+        <span>馬車体験あり</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="menu-section">
+  <div class="wrap">
+    <p class="eyebrow">MENU</p>
+    <h2 class="section-title">お品書き</h2>
+    <div class="menu-list">
+      <div class="menu-item"><span class="name">鯖街道鯖の九重味噌煮定食</span><span class="price">¥1,380</span></div>
+      <div class="menu-item"><span class="name">ヤミツキ高島とんちゃん焼き定食</span><span class="price">¥1,480</span></div>
+      <div class="menu-item"><span class="name">低温熟成の豚かつ定食</span><span class="price">¥1,650</span></div>
+      <div class="menu-item"><span class="name">塩麹唐揚げ定食</span><span class="price">¥1,250</span></div>
+      <div class="menu-item"><span class="name">ザル蕎麦と地元野菜の天ぷら（海老天付）</span><span class="price">¥1,680</span></div>
+      <div class="menu-item"><span class="name">近江の恵み「びわ」膳（名物）</span><span class="price">¥2,700</span></div>
+      <div class="menu-item"><span class="name">近江牛の「じゅんじゅん」定食（数量限定）</span><span class="price">¥3,300</span></div>
+    </div>
+    <p class="menu-note">2026年8月訪問時の店内メニューより。季節により内容・価格が変わる場合があります。</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <p class="eyebrow">GALLERY</p>
+    <h2 class="section-title">並木と食堂のひとコマ</h2>
+  </div>
+  <div class="wrap">
+    <div class="mag-grid">
+      <figure class="big"><img src="../../images/odekake/namiki-shokudo-tsubame/avenue-walk.jpg" alt="メタセコイア並木を歩く様子" loading="lazy"><figcaption>メタセコイア並木</figcaption></figure>
+      <figure><img src="../../images/odekake/namiki-shokudo-tsubame/carriage.jpg" alt="並木を進む馬車" loading="lazy"><figcaption>馬車での並木周遊</figcaption></figure>
+      <figure><img src="../../images/odekake/namiki-shokudo-tsubame/outdoor-table.jpg" alt="屋外の休憩スペース" loading="lazy"><figcaption>屋外休憩スペース</figcaption></figure>
+      <figure><img src="../../images/odekake/namiki-shokudo-tsubame/tonkatsu-set.jpg" alt="近江の郷土料理定食" loading="lazy"><figcaption>近江の郷土定食</figcaption></figure>
+      <figure><img src="../../images/odekake/namiki-shokudo-tsubame/soba-tempura.jpg" alt="そばとお魚料理のセット" loading="lazy"><figcaption>そばと近江の恵み</figcaption></figure>
+      <figure><img src="../../images/odekake/namiki-shokudo-tsubame/local-dish.jpg" alt="名物の鯖寿司" loading="lazy"><figcaption>名物・鯖寿司</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section class="info-section">
+  <div class="wrap">
+    <p class="eyebrow">INFO</p>
+    <h2 class="section-title">店舗情報</h2>
+    <div class="info-box">
+      <div class="info-row"><div class="label">所在地</div><div>マキノピックランド内（〒520-1834 滋賀県高島市マキノ町寺久保835-1）</div></div>
+      <div class="info-row"><div class="label">営業時間</div><div>11:00〜15:00（L.O.14:45）</div></div>
+      <div class="info-row"><div class="label">電話</div><div>0740-27-1811（マキノピックランド）</div></div>
+      <div class="info-row"><div class="label">駐車場</div><div>あり（約230台）</div></div>
+      <a class="map-btn" href="https://www.google.com/maps/search/?api=1&query=%E3%83%9E%E3%82%AD%E3%83%8E%E3%83%94%E3%83%83%E3%82%AF%E3%83%A9%E3%83%B3%E3%83%89" target="_blank" rel="noopener">Googleマップで見る</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="fp-name">なみ木食堂ツバメ — 行ってきたシリーズ #13</div>
+  <p>このページは チワコギー工房（https://chiwacogi-studio.pages.dev/）の「行ってきたシリーズ」で勝手に作ったファンページです。掲載写真はすべて自分で撮影したものです。お店・施設の公式ページではありません。</p>
+</footer>
+
+</body>
+</html>

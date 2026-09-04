@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>cafe MARE | 行ってきたシリーズ #14 - チワコギー工房</title>
+<meta name="description" content="福井県福井市、越前海岸沿いの絶景カフェ「cafe MARE」のファン紹介ページ。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,500;1,500;1,600&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --sea:#2f6f8a;
+    --sand:#e8d8bc;
+    --driftwood:#6b5a44;
+    --ink:#26241d;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  body{font-family:'Noto Sans JP',sans-serif;background:var(--sand);color:var(--ink);line-height:1.85;}
+  h1,h2,.serif{font-family:'EB Garamond',serif;}
+  img{max-width:100%;display:block;}
+  a{color:inherit;}
+  .wrap{max-width:1080px;margin:0 auto;padding:0 24px;}
+
+  .hero{position:relative;height:90vh;min-height:560px;max-height:800px;overflow:hidden;}
+  .hero img{width:100%;height:100%;object-fit:cover;}
+  .hero::after{content:"";position:absolute;inset:0;background:linear-gradient(0deg, rgba(47,111,138,0.9) 0%, rgba(47,111,138,0.08) 55%);}
+  .hero-photo-badge{
+    position:absolute;top:36px;right:36px;width:150px;height:150px;
+    border-radius:50%;overflow:hidden;border:5px solid #fff;
+    box-shadow:0 10px 24px rgba(0,0,0,0.25);z-index:3;
+  }
+  .hero-photo-badge img{width:100%;height:100%;object-fit:cover;}
+  .hero-inner{position:absolute;left:0;right:0;bottom:0;padding:44px 24px 56px;color:#fff;text-align:center;}
+  .badge{display:inline-block;border:1px solid rgba(255,255,255,0.7);padding:5px 18px;border-radius:999px;font-size:0.78rem;letter-spacing:0.15em;margin-bottom:20px;}
+  .hero-inner h1{font-size:clamp(1.9rem,5.5vw,3.2rem);font-style:italic;text-shadow:0 2px 12px rgba(0,0,0,0.35);}
+  .hero-inner p{margin-top:12px;font-size:1.02rem;opacity:0.92;letter-spacing:0.04em;}
+
+  .wave{display:block;margin-top:-2px;}
+
+  section{padding:66px 0;}
+  .eyebrow{text-align:center;color:var(--sea);font-weight:700;letter-spacing:0.14em;font-size:0.82rem;margin-bottom:10px;}
+  h2.section-title{text-align:center;font-size:clamp(1.6rem,4vw,2.2rem);color:var(--driftwood);margin-bottom:26px;font-style:italic;}
+
+  .concept-box{max-width:720px;margin:0 auto;text-align:center;background:#fff;border-radius:20px;padding:36px;box-shadow:0 10px 26px rgba(47,111,138,0.1);}
+  .concept-tags{margin-top:20px;display:flex;gap:10px;flex-wrap:wrap;justify-content:center;}
+  .concept-tags span{background:var(--sea);color:#fff;font-size:0.82rem;padding:6px 16px;border-radius:999px;}
+
+  .menu-section{background:var(--sea);color:#fff;}
+  .menu-section h2.section-title{color:#fff;}
+  .menu-section .eyebrow{color:#bfe3ef;}
+  .menu-list{max-width:640px;margin:0 auto;}
+  .menu-item{display:flex;justify-content:space-between;gap:16px;padding:15px 0;border-bottom:1px dashed rgba(255,255,255,0.28);}
+  .menu-item .price{color:#f4d58d;font-weight:700;white-space:nowrap;}
+  .menu-note{max-width:640px;margin:26px auto 0;font-size:0.85rem;opacity:0.85;text-align:center;}
+
+  /* circular photo cluster gallery */
+  .circle-gallery{display:flex;flex-wrap:wrap;justify-content:center;gap:26px;padding:10px 10px 20px;}
+  .circle-item{text-align:center;width:170px;}
+  .circle-item .ring{
+    width:170px;height:170px;border-radius:50%;overflow:hidden;
+    border:4px solid #fff;box-shadow:0 10px 22px rgba(47,111,138,0.18);
+  }
+  .circle-item img{width:100%;height:100%;object-fit:cover;}
+  .circle-item .cap{margin-top:12px;font-size:0.88rem;color:var(--driftwood);}
+
+  .info-section .info-box{max-width:600px;margin:0 auto;background:#fff;border-radius:20px;padding:36px;box-shadow:0 10px 26px rgba(47,111,138,0.1);}
+  .info-row{display:flex;gap:16px;padding:13px 0;border-bottom:1px solid rgba(0,0,0,0.07);}
+  .info-row:last-child{border-bottom:none;}
+  .info-row .label{flex:0 0 96px;color:var(--sea);font-weight:700;font-size:0.9rem;}
+  .map-btn{display:block;text-align:center;background:var(--driftwood);color:#fff;text-decoration:none;font-weight:700;padding:14px;border-radius:999px;margin-top:24px;}
+
+  footer{background:var(--ink);color:#cfc9ba;padding:40px 24px;text-align:center;font-size:0.82rem;line-height:1.9;}
+  footer .fp-name{font-family:'EB Garamond',serif;color:#fff;font-size:1.15rem;font-style:italic;margin-bottom:10px;}
+
+  @media(max-width:600px){
+    .hero-photo-badge{width:110px;height:110px;top:24px;right:20px;}
+    .circle-item{width:42vw;}
+    .circle-item .ring{width:42vw;height:42vw;}
+  }
+</style>
+</head>
+<body>
+
+<div class="hero">
+  <img src="../../images/odekake/cafe-mare-fukui/hero-deck-pine.jpg" alt="松の木と越前海岸を望むウッドデッキ">
+  <div class="hero-photo-badge">
+    <img src="../../images/odekake/cafe-mare-fukui/cafe-drinks.jpg" alt="カプチーノとアイスラテ、クロワッサン">
+  </div>
+  <div class="hero-inner">
+    <span class="badge">行ってきたシリーズ #14</span>
+    <h1>越前海岸、<br>潮風とコーヒーの休憩所。</h1>
+    <p>cafe MARE（福井市大丹生町）</p>
+  </div>
+</div>
+<svg class="wave" viewBox="0 0 1200 60" preserveAspectRatio="none" style="width:100%;height:40px;">
+  <path d="M0,30 C300,60 900,0 1200,30 L1200,0 L0,0 Z" fill="var(--sand)"/>
+</svg>
+
+<section>
+  <div class="wrap">
+    <p class="eyebrow">CONCEPT</p>
+    <h2 class="section-title">海を見ながら、深呼吸するひととき。</h2>
+    <div class="concept-box">
+      <p>
+        越前海岸沿い、風光明媚なロケーションに立つ一軒のカフェ。
+        店内奥のデッキは海へと続き、松の木越しに日本海の景色を眺めながらコーヒーを楽しめます。
+        ペットと一緒に入店できるのも嬉しいポイントです。
+      </p>
+      <div class="concept-tags">
+        <span>越前海岸ビュー</span>
+        <span>ペット同伴可</span>
+        <span>海に続くデッキ</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="menu-section">
+  <div class="wrap">
+    <p class="eyebrow">MENU</p>
+    <h2 class="section-title">Menu（一例）</h2>
+    <div class="menu-list">
+      <div class="menu-item"><span class="name">ローストビーフ丼</span><span class="price">¥1,080</span></div>
+      <div class="menu-item"><span class="name">アジフライカレー</span><span class="price">¥880</span></div>
+      <div class="menu-item"><span class="name">ガパオライス</span><span class="price">¥880</span></div>
+      <div class="menu-item"><span class="name">海鮮タコライス</span><span class="price">¥880</span></div>
+    </div>
+    <p class="menu-note">カフェタイムはカプチーノ・アイスラテ・クロワッサンなどのドリンク＆軽食メニューも豊富。詳しい価格は店頭でご確認ください。</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <p class="eyebrow">GALLERY</p>
+    <h2 class="section-title">海辺のひとコマ</h2>
+  </div>
+  <div class="circle-gallery">
+    <div class="circle-item"><div class="ring"><img src="../../images/odekake/cafe-mare-fukui/pine-bench-ocean.jpg" alt="松と海を望むベンチ" loading="lazy"></div><div class="cap">海を望むデッキ</div></div>
+    <div class="circle-item"><div class="ring"><img src="../../images/odekake/cafe-mare-fukui/window-bench.jpg" alt="窓辺のベンチ席と愛犬" loading="lazy"></div><div class="cap">窓辺の特等席</div></div>
+    <div class="circle-item"><div class="ring"><img src="../../images/odekake/cafe-mare-fukui/interior-wood.jpg" alt="木のぬくもりある店内" loading="lazy"></div><div class="cap">木のぬくもり店内</div></div>
+    <div class="circle-item"><div class="ring"><img src="../../images/odekake/cafe-mare-fukui/exterior-sign.jpg" alt="MAREの外観と看板" loading="lazy"></div><div class="cap">外観</div></div>
+  </div>
+</section>
+
+<section class="info-section">
+  <div class="wrap">
+    <p class="eyebrow">INFO</p>
+    <h2 class="section-title">店舗情報</h2>
+    <div class="info-box">
+      <div class="info-row"><div class="label">住所</div><div>福井県福井市大丹生町70-3</div></div>
+      <div class="info-row"><div class="label">営業時間</div><div>10:00〜日没まで（季節により変動）</div></div>
+      <div class="info-row"><div class="label">定休日</div><div>なし</div></div>
+      <div class="info-row"><div class="label">電話</div><div>0776-88-2323</div></div>
+      <a class="map-btn" href="https://www.google.com/maps/search/?api=1&query=cafe+MARE+%E7%A6%8F%E4%BA%95%E5%B8%82%E5%A4%A7%E4%B8%B9%E7%94%9F%E7%94%BA" target="_blank" rel="noopener">Googleマップで見る</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="fp-name">cafe MARE — 行ってきたシリーズ #14</div>
+  <p>このページは チワコギー工房（https://chiwacogi-studio.pages.dev/）の「行ってきたシリーズ」で勝手に作ったファンページです。掲載写真はすべて自分で撮影したものです。お店・施設の公式ページではありません。</p>
+</footer>
+
+</body>
+</html>
