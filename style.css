@@ -795,3 +795,20 @@ section[id] { scroll-margin-top: 76px; }
   .hero { padding: 60px 20px 80px; }
   .section { padding: 60px 0; }
 }
+
+/* ===== 絵本カード（Kindle絵本） ===== */
+.ehon-image-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 240px;
+  margin-bottom: 16px;
+}
+.ehon-image {
+  max-height: 240px;
+  max-width: 160px;
+  width: auto;
+  height: auto;
+  border-radius: 4px;
+  box-shadow: 0 6px 18px rgba(60, 50, 80, 0.22);
+}
