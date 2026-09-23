@@ -1,0 +1,488 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex">
+<title>cake shop Candy Apple（キャンディアップル）｜白山市横江のケーキ屋さん ファンページ</title>
+<style>
+  :root{
+    --mint:#5fb8ac;
+    --mint-dark:#3f9186;
+    --mint-pale:#eef7f4;
+    --cream:#fdf6e3;
+    --cream-deep:#f6e6b8;
+    --apple:#c94a3f;
+    --apple-dark:#a83a30;
+    --wood:#8a6b47;
+    --wood-dark:#5c4830;
+    --ink:#3c3226;
+    --paper:#fffdf8;
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0;
+    font-family:"Zen Maru Gothic","Hiragino Maru Gothic ProN",sans-serif;
+    color:var(--ink);
+    background:var(--cream);
+    line-height:1.8;
+  }
+  h1,h2,h3,.logo,.hand{
+    font-family:"Yomogi","Zen Maru Gothic",sans-serif;
+  }
+  img{max-width:100%;display:block;}
+  a{color:inherit;}
+  .wrap{max-width:1080px;margin:0 auto;padding:0 20px;}
+
+  /* ---------- Hero ---------- */
+  .hero{
+    display:flex;
+    flex-wrap:wrap;
+    background:linear-gradient(180deg,var(--mint-pale) 0%, var(--cream) 100%);
+    position:relative;
+    overflow:hidden;
+  }
+  .hero::before{
+    content:"";
+    position:absolute;
+    top:-60px; right:-60px;
+    width:220px;height:220px;
+    background:var(--apple);
+    border-radius:50%;
+    opacity:.12;
+  }
+  .hero-photo{
+    flex:1 1 380px;
+    min-height:320px;
+    background-size:cover;
+    background-position:center;
+  }
+  .hero-text{
+    flex:1 1 380px;
+    padding:48px 32px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    gap:14px;
+  }
+  .badge{
+    display:inline-block;
+    background:var(--apple);
+    color:#fff;
+    font-size:13px;
+    padding:5px 14px;
+    border-radius:999px;
+    width:fit-content;
+    letter-spacing:.05em;
+  }
+  .hero-text h1{
+    font-size:clamp(28px,5vw,44px);
+    margin:6px 0 0;
+    color:var(--mint-dark);
+    line-height:1.3;
+    text-shadow:0 2px 0 rgba(255,255,255,.6);
+  }
+  .hero-text .en{
+    font-size:14px;
+    letter-spacing:.12em;
+    color:var(--wood-dark);
+    opacity:.8;
+  }
+  .hero-text p{
+    margin:8px 0 0;
+    font-size:15.5px;
+  }
+  .hero-cta{
+    margin-top:10px;
+    display:flex;
+    gap:10px;
+    flex-wrap:wrap;
+  }
+  .btn{
+    display:inline-block;
+    padding:11px 22px;
+    border-radius:999px;
+    text-decoration:none;
+    font-size:14px;
+    border:2px solid var(--mint-dark);
+    transition:.2s;
+  }
+  .btn.solid{background:var(--mint-dark);color:#fff;}
+  .btn.solid:hover{background:var(--mint);}
+  .btn.outline{color:var(--mint-dark);}
+  .btn.outline:hover{background:var(--mint-pale);}
+
+  /* ---------- Section common ---------- */
+  section{padding:56px 0;}
+  .section-title{
+    text-align:center;
+    margin-bottom:8px;
+  }
+  .section-title .kicker{
+    display:block;
+    font-size:13px;
+    color:var(--apple);
+    letter-spacing:.2em;
+    margin-bottom:6px;
+  }
+  .section-title h2{
+    font-size:clamp(22px,4vw,30px);
+    color:var(--wood-dark);
+    margin:0;
+  }
+  .section-lead{
+    text-align:center;
+    max-width:640px;
+    margin:14px auto 36px;
+    font-size:14.5px;
+    color:#5a4d3c;
+  }
+
+  /* ---------- Concept ---------- */
+  .concept{background:var(--paper);}
+  .concept-words{
+    display:flex;
+    justify-content:center;
+    gap:18px;
+    flex-wrap:wrap;
+    margin:26px 0 8px;
+  }
+  .concept-words span{
+    font-family:"Yomogi",sans-serif;
+    font-size:clamp(18px,3vw,24px);
+    color:var(--mint-dark);
+    background:var(--mint-pale);
+    padding:10px 22px;
+    border-radius:16px;
+    border:2px dashed var(--mint);
+  }
+
+  /* ---------- Signature ---------- */
+  .signature{
+    background:var(--mint-pale);
+    border-top:6px dashed var(--mint);
+    border-bottom:6px dashed var(--mint);
+  }
+  .sig-card{
+    display:flex;
+    flex-wrap:wrap;
+    align-items:center;
+    gap:32px;
+    background:var(--paper);
+    border-radius:24px;
+    overflow:hidden;
+    box-shadow:0 10px 30px rgba(90,70,40,.1);
+  }
+  .sig-card img{flex:1 1 340px;min-height:260px;object-fit:cover;height:100%;}
+  .sig-info{flex:1 1 320px;padding:28px 30px 28px 4px;}
+  .sig-info .no1{
+    display:inline-block;
+    background:var(--apple);
+    color:#fff;
+    font-size:12.5px;
+    padding:4px 12px;
+    border-radius:999px;
+    margin-bottom:10px;
+  }
+  .sig-info h3{
+    font-size:26px;
+    margin:0 0 10px;
+    color:var(--apple-dark);
+  }
+  .sig-info p{font-size:14.5px;margin:0 0 14px;}
+  .price-tag{
+    font-family:"Yomogi",sans-serif;
+    font-size:22px;
+    color:var(--wood-dark);
+    background:var(--cream-deep);
+    display:inline-block;
+    padding:6px 18px;
+    border-radius:12px;
+  }
+  .price-tag small{font-size:12px;font-weight:normal;opacity:.7;}
+
+  /* ---------- Menu grid ---------- */
+  .menu-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:22px;
+  }
+  .menu-item{
+    background:var(--paper);
+    border-radius:18px;
+    overflow:hidden;
+    box-shadow:0 6px 18px rgba(90,70,40,.08);
+    transition:.2s;
+  }
+  .menu-item:hover{transform:translateY(-4px);}
+  .menu-item .photo{aspect-ratio:4/3;overflow:hidden;}
+  .menu-item .photo img{width:100%;height:100%;object-fit:cover;}
+  .menu-item .info{padding:14px 16px 18px;}
+  .menu-item .info .new{
+    color:#fff;background:var(--apple);
+    font-size:11px;padding:2px 9px;border-radius:999px;
+    margin-bottom:6px;display:inline-block;
+  }
+  .menu-item h4{margin:2px 0 4px;font-size:16px;color:var(--wood-dark);}
+  .menu-item .desc{font-size:12.5px;color:#6a5c48;margin:0 0 8px;min-height:2.6em;}
+  .menu-item .yen{
+    font-family:"Yomogi",sans-serif;
+    color:var(--mint-dark);
+    font-size:19px;
+  }
+  .menu-item .yen small{font-size:11px;color:#8a7c68;}
+
+  /* ---------- Gallery ---------- */
+  .gallery{background:var(--paper);}
+  .gallery-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(190px,1fr));
+    gap:22px;
+  }
+  .polaroid{
+    background:#fff;
+    padding:10px 10px 34px;
+    border-radius:6px;
+    box-shadow:0 8px 18px rgba(90,70,40,.15);
+    transform:rotate(var(--r,0deg));
+  }
+  .polaroid:nth-child(2n){--r:1.5deg;}
+  .polaroid:nth-child(3n){--r:-1.8deg;}
+  .polaroid:nth-child(5n){--r:1deg;}
+  .polaroid img{width:100%;aspect-ratio:1/1;object-fit:cover;border-radius:2px;}
+  .polaroid .cap{
+    text-align:center;
+    font-size:12.5px;
+    margin-top:10px;
+    color:var(--wood-dark);
+    font-family:"Yomogi",sans-serif;
+  }
+
+  /* ---------- Info ---------- */
+  .info-section{
+    background:linear-gradient(180deg,var(--cream) 0%, var(--mint-pale) 100%);
+  }
+  .info-box{
+    display:flex;
+    flex-wrap:wrap;
+    gap:32px;
+    background:var(--paper);
+    border-radius:22px;
+    padding:36px;
+    box-shadow:0 10px 26px rgba(90,70,40,.1);
+  }
+  .info-table{flex:1 1 320px;}
+  .info-table dl{margin:0;display:grid;grid-template-columns:88px 1fr;row-gap:14px;column-gap:10px;font-size:14.5px;}
+  .info-table dt{color:var(--apple-dark);font-weight:bold;}
+  .info-table dd{margin:0;}
+  .info-table dd a{color:var(--mint-dark);text-decoration:underline;}
+  .note-box{
+    margin-top:18px;
+    background:var(--cream-deep);
+    border-radius:14px;
+    padding:14px 16px;
+    font-size:13px;
+    color:var(--wood-dark);
+  }
+  .map-frame{flex:1 1 320px;min-height:280px;border-radius:16px;overflow:hidden;border:0;}
+  .map-frame iframe{width:100%;height:100%;min-height:280px;border:0;}
+
+  .links{display:flex;gap:10px;flex-wrap:wrap;margin-top:18px;}
+
+  /* ---------- Footer ---------- */
+  footer{
+    background:var(--wood-dark);
+    color:#e9ddc7;
+    padding:34px 0;
+    text-align:center;
+    font-size:12.5px;
+  }
+  footer p{max-width:640px;margin:6px auto;opacity:.85;}
+  footer .fanpage{
+    font-family:"Yomogi",sans-serif;
+    font-size:16px;
+    color:#fff;
+    margin-bottom:8px;
+  }
+
+  @media (max-width:600px){
+    .hero-text{padding:36px 20px;}
+    section{padding:40px 0;}
+    .sig-info{padding:22px 20px;}
+  }
+</style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Yomogi&family=Zen+Maru+Gothic:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="hero">
+  <div class="hero-photo" style="background-image:url('../../images/odekake/candy-apple-hakusan/exterior.jpg');"></div>
+  <div class="hero-text">
+    <span class="badge">非公式ファンページ</span>
+    <span class="en">CAKE SHOP CANDY APPLE</span>
+    <h1>白山市横江、<br>アップルパイが人気の<br>小さな洋菓子店。</h1>
+    <p>ミント色の扉と手描きの値札があたたかい、住宅街にひっそり佇むケーキ屋さん「Candy Apple」。焼き菓子も充実、贈りものにもぴったりです。</p>
+    <div class="hero-cta">
+      <a class="btn solid" href="https://www.cakeshop-candyapple.com/" target="_blank" rel="noopener">公式サイトを見る</a>
+      <a class="btn outline" href="https://maps.google.com/?q=石川県白山市横江町63" target="_blank" rel="noopener">地図で見る</a>
+    </div>
+  </div>
+</div>
+
+<section class="concept">
+  <div class="wrap">
+    <div class="section-title">
+      <span class="kicker">CONCEPT</span>
+      <h2>かわいい・あたたかい・林檎の香り</h2>
+    </div>
+    <p class="section-lead">
+      ミントグリーンの扉、ギンガムチェックのクロス、笑顔のイラスト入り手描き値札。<br>
+      店内のどこを切り取ってもかわいい、白山市横江の隠れ家的ケーキ屋さんです。
+    </p>
+    <div class="concept-words">
+      <span>🍏 看板はアップルパイ</span>
+      <span>🎀 手土産にも◎</span>
+      <span>🅿️ 駐車場あり</span>
+    </div>
+  </div>
+</section>
+
+<section class="signature">
+  <div class="wrap">
+    <div class="section-title">
+      <span class="kicker">SIGNATURE</span>
+      <h2>当店人気No.1「キャンディアップルパイ」</h2>
+    </div>
+    <div class="sig-card">
+      <img src="../../images/odekake/candy-apple-hakusan/applepie-closeup.jpg" alt="キャンディアップルパイ">
+      <div class="sig-info">
+        <span class="no1">🇬🇧 No.1 ケーキ</span>
+        <h3>アップルパイ</h3>
+        <p>ザクザクとした食感の香ばしいくるみ入りクランブルが、1度食べたらクセになる一枚。りんごの優しい甘さが引き立つ、お店の看板商品です。生クリームなしでも作れます。</p>
+        <div class="price-tag">550<small>円（税込594円）</small></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="concept">
+  <div class="wrap">
+    <div class="section-title">
+      <span class="kicker">MENU</span>
+      <h2>お品書き</h2>
+    </div>
+    <p class="section-lead">ケーキはショーケースの中から日替わりで並ぶことも。価格は訪問時点のものです。</p>
+    <div class="menu-grid">
+      <div class="menu-item">
+        <div class="photo"><img src="../../images/odekake/candy-apple-hakusan/doublemontblanc.jpg" alt="ダブルモンブランタルト"></div>
+        <div class="info">
+          <span class="new">NEW</span>
+          <h4>ダブルモンブランタルト</h4>
+          <p class="desc">フランス産栗と和栗、2種類のモンブランクリームが味わえるよくばりなタルト。</p>
+          <div class="yen">640円 <small>（税込691円）</small></div>
+        </div>
+      </div>
+      <div class="menu-item">
+        <div class="photo"><img src="../../images/odekake/candy-apple-hakusan/wholepearpie.jpg" alt="まるごと梨パイ"></div>
+        <div class="info">
+          <h4>まるごと梨パイ<span style="font-size:11px;color:#a83a30;">（季節限定）</span></h4>
+          <p class="desc">旬の梨をまるごと1つ！生クリームとカスタードクリーム、ラズベリーソース入り。</p>
+          <div class="yen">700円 <small>（税込756円）</small></div>
+        </div>
+      </div>
+      <div class="menu-item">
+        <div class="photo"><img src="../../images/odekake/candy-apple-hakusan/meloncake.jpg" alt="メロンのショートケーキ"></div>
+        <div class="info">
+          <h4>メロンのショートケーキ</h4>
+          <p class="desc">メロンの種類は日によって替わります。旬の果実をふんだんに。</p>
+          <div class="yen">620円 <small>（税込670円）</small></div>
+        </div>
+      </div>
+      <div class="menu-item">
+        <div class="photo"><img src="../../images/odekake/candy-apple-hakusan/creampuff-pudding.jpg" alt="シュークリームとプリン"></div>
+        <div class="info">
+          <h4>ゴツゴツシュークリーム</h4>
+          <p class="desc">ひゃくまん穀米粉を使ったカスタードに生クリームを合わせたクリームがたっぷり。</p>
+          <div class="yen">350円 <small>（税込378円）</small></div>
+        </div>
+      </div>
+      <div class="menu-item">
+        <div class="photo"><img src="../../images/odekake/candy-apple-hakusan/showcase-full.jpg" alt="ケーキケース全体"></div>
+        <div class="info">
+          <h4>ひゃくまん穀ロール</h4>
+          <p class="desc">石川県のブランド米「ひゃくまん穀」の米粉を使った、しっとりスポンジのロールケーキ。</p>
+          <div class="yen">1,600円〜 <small>（1本／カット400円）</small></div>
+        </div>
+      </div>
+      <div class="menu-item">
+        <div class="photo"><img src="../../images/odekake/candy-apple-hakusan/scone.jpg" alt="もちもちスコーン"></div>
+        <div class="info">
+          <h4>もちもちスコーン（五郎島金時）</h4>
+          <p class="desc">モチモチとした新食感のスコーン。さつまいも入り。</p>
+          <div class="yen">200円 <small>（税込216円）</small></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="gallery">
+  <div class="wrap">
+    <div class="section-title">
+      <span class="kicker">GALLERY</span>
+      <h2>店内のようす</h2>
+    </div>
+    <div class="gallery-grid">
+      <div class="polaroid"><img src="../../images/odekake/candy-apple-hakusan/interior-shelf.jpg" alt="店内の棚"><div class="cap">木の棚がずらり</div></div>
+      <div class="polaroid"><img src="../../images/odekake/candy-apple-hakusan/bakedgoods.jpg" alt="焼き菓子ギフト"><div class="cap">焼き菓子ギフトも充実</div></div>
+      <div class="polaroid"><img src="../../images/odekake/candy-apple-hakusan/award-diploma.jpg" alt="受賞歴"><div class="cap">パティシエの受賞歴</div></div>
+      <div class="polaroid"><img src="../../images/odekake/candy-apple-hakusan/applepie-wide.jpg" alt="ショーケース"><div class="cap">ショーケースの様子</div></div>
+      <div class="polaroid"><img src="../../images/odekake/candy-apple-hakusan/signboard.jpg" alt="お店の外観"><div class="cap">かわいい外観</div></div>
+      <div class="polaroid"><img src="../../images/odekake/candy-apple-hakusan/parking.jpg" alt="駐車場案内"><div class="cap">駐車場は奥にも3台</div></div>
+    </div>
+  </div>
+</section>
+
+<section class="info-section">
+  <div class="wrap">
+    <div class="section-title">
+      <span class="kicker">SHOP INFO</span>
+      <h2>店舗情報</h2>
+    </div>
+    <div class="info-box">
+      <div class="info-table">
+        <dl>
+          <dt>店名</dt><dd>cake shop Candy Apple（キャンディアップル）</dd>
+          <dt>住所</dt><dd>石川県白山市横江町63</dd>
+          <dt>電話</dt><dd>076-287-3622</dd>
+          <dt>営業時間</dt><dd>10:30〜18:00（土・日・祝は〜17:30）</dd>
+          <dt>定休日</dt><dd>不定休（毎月の定休日はInstagramでお知らせ）</dd>
+          <dt>駐車場</dt><dd>店舗前・奥にも計3台分あり</dd>
+          <dt>お支払い</dt><dd>現金・1,500円以上はクレジットカードも利用可</dd>
+        </dl>
+        <div class="note-box">🎂 誕生日・記念日のデコレーションケーキは3日前までの要予約。キャラクタープレートは8日前までにご相談を。</div>
+        <div class="links">
+          <a class="btn outline" href="https://www.cakeshop-candyapple.com/" target="_blank" rel="noopener">公式サイト</a>
+          <a class="btn outline" href="https://www.instagram.com/cakeshop.candy_apple/?hl=ja" target="_blank" rel="noopener">Instagram</a>
+          <a class="btn outline" href="https://tabelog.com/ishikawa/A1702/A170203/17012081/" target="_blank" rel="noopener">食べログ</a>
+        </div>
+      </div>
+      <div class="map-frame">
+        <iframe src="https://maps.google.com/maps?q=%E7%9F%B3%E5%B7%9D%E7%9C%8C%E7%99%BD%E5%B1%B1%E5%B8%82%E6%A8%AA%E6%B1%9F%E7%94%BA63&t=&z=15&ie=UTF8&iwloc=&output=embed" loading="lazy" allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <p class="fanpage">🍎 Candy Apple 非公式ファンページ</p>
+    <p>このページは一人のお客として訪れた個人が、お店の魅力を紹介するために作成した非公式のファンページです。cake shop Candy Apple様の公式ページではありません。掲載写真はすべて訪問時に自身で撮影したものです。価格・営業時間等は訪問時点の情報のため、最新情報は公式サイト・Instagramをご確認ください。</p>
+    <p>© chiwacogi studio</p>
+  </div>
+</footer>
+
+</body>
+</html>
