@@ -1,0 +1,240 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>とんかつ蔵｜金沢市伏見新町のとんかつ専門店 ファンページ</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kaisei+Tokumin:wght@500;700;800&family=Zen+Kaku+Gothic+Antique:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --kura:#2a2b30;       /* 蔵の黒漆喰 */
+  --kura-2:#3a3b42;
+  --kinari:#f3ead8;     /* 生成り */
+  --kinari-2:#e8dcc2;
+  --age:#d08a22;        /* 揚げ色 */
+  --shu:#b3261e;        /* 朱 */
+  --wood:#5a3a26;
+  --ink:#26211c;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--kinari);color:var(--ink);font-family:"Zen Kaku Gothic Antique","Hiragino Sans",sans-serif;line-height:1.9}
+img{max-width:100%;display:block}
+a{color:inherit}
+.mincho{font-family:"Kaisei Tokumin","Hiragino Mincho ProN",serif}
+.wrap{max-width:1000px;margin:0 auto;padding:0 22px}
+/* なまこ壁風パターン */
+.namako{background-color:var(--kura);background-image:linear-gradient(45deg,rgba(255,255,255,.07) 25%,transparent 25%,transparent 75%,rgba(255,255,255,.07) 75%),linear-gradient(45deg,rgba(255,255,255,.07) 25%,transparent 25%,transparent 75%,rgba(255,255,255,.07) 75%);background-size:34px 34px;background-position:0 0,17px 17px}
+
+/* ===== Hero：縦書き ===== */
+.hero{display:grid;grid-template-columns:1.1fr 1fr;min-height:min(92vh,720px)}
+.hero-text{position:relative;padding:60px 40px;display:flex;align-items:center;justify-content:center;color:var(--kinari)}
+.vert{writing-mode:vertical-rl;display:flex;gap:26px;align-items:flex-start}
+.vert h1{margin:0;font-size:clamp(54px,9vw,110px);line-height:1.1;letter-spacing:.12em}
+.vert p{margin:0;font-size:clamp(15px,2vw,19px);letter-spacing:.25em;line-height:2.2;color:#d8cdb4}
+.stamp{position:absolute;left:36px;bottom:36px;width:84px;height:84px;border:3px solid var(--shu);color:var(--shu);display:grid;place-items:center;font-size:46px;transform:rotate(-8deg);border-radius:6px;background:rgba(243,234,216,.92)}
+.hero-photo{background:url("../../images/odekake/tonkatsu-kura-kanazawa/oroshi-katsu.jpg") center/cover no-repeat;position:relative}
+.hero-photo::after{content:"";position:absolute;inset:0;box-shadow:inset 14px 0 30px rgba(42,43,48,.55)}
+.hero-cta{position:absolute;right:0;bottom:0;display:flex;z-index:2}
+.hero-cta a{display:block;padding:16px 28px;text-decoration:none;font-size:14px;letter-spacing:.1em}
+.hero-cta .a{background:var(--shu);color:#fff}
+.hero-cta .b{background:var(--kinari);color:var(--ink)}
+
+/* ===== Section ===== */
+section{padding:84px 0}
+.sec-title{text-align:center;margin-bottom:46px}
+.sec-title .small{display:block;font-size:12px;letter-spacing:.4em;color:var(--shu);margin-bottom:6px}
+.sec-title h2{margin:0;font-size:clamp(26px,5vw,38px);letter-spacing:.2em}
+.sec-title::after{content:"";display:block;width:56px;height:3px;background:var(--age);margin:18px auto 0}
+
+/* ===== Concept：書 ===== */
+.concept-grid{display:grid;grid-template-columns:1fr 1fr;gap:32px;align-items:center}
+.concept-grid img{width:100%;height:100%;max-height:340px;object-fit:cover;border:6px solid #fff;box-shadow:0 14px 34px rgba(60,40,20,.22)}
+.concept-grid .a{transform:rotate(-1.4deg)}
+.concept-grid .b{transform:rotate(1.2deg)}
+.concept-text{text-align:center;max-width:680px;margin:40px auto 0}
+.concept-text p{margin:0 0 14px}
+.keys{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin-top:18px}
+.keys span{background:var(--kura);color:var(--kinari);padding:6px 20px;font-size:14px;letter-spacing:.2em}
+
+/* ===== Menu：お品書き ===== */
+.menu{color:var(--kinari)}
+.menu .sec-title h2{color:var(--kinari)}
+.menu .sec-title .small{color:var(--age)}
+.menu-card{background:var(--kinari);color:var(--ink);padding:36px;border:3px double var(--wood)}
+.menu-photo{margin:0 0 30px}
+.menu-photo img{width:100%;max-height:420px;object-fit:cover;border:1px solid var(--kinari-2)}
+.menu-photo figcaption{font-size:12px;color:#7a6c58;margin-top:6px;text-align:right}
+.mcols{display:grid;grid-template-columns:1fr 1fr;gap:0 46px}
+.mhead{font-size:20px;letter-spacing:.3em;margin:0 0 6px;color:var(--shu);border-bottom:2px solid var(--shu);padding-bottom:6px}
+.mlist{list-style:none;margin:0 0 30px;padding:0}
+.mlist li{display:flex;align-items:baseline;gap:8px;padding:9px 0;border-bottom:1px dashed #b9a98a}
+.mlist .n{flex:1}
+.mlist .n small{display:block;font-size:11.5px;color:#7a6c58}
+.mlist .y{font-family:"Kaisei Tokumin",serif;font-weight:700;color:var(--wood);white-space:nowrap}
+.pickup{background:var(--age);color:#fff;padding:3px 12px;font-size:11px;letter-spacing:.15em;margin-left:6px}
+.note{font-size:12px;color:#d8cdb4;margin-top:18px;text-align:center}
+
+/* ===== Gallery ===== */
+.gal{display:grid;grid-template-columns:repeat(6,1fr);gap:14px}
+.gal figure{margin:0;background:#fff;padding:8px 8px 12px;box-shadow:0 8px 22px rgba(60,40,20,.18)}
+.gal img{width:100%;aspect-ratio:4/3;object-fit:cover}
+.gal figcaption{font-size:12px;text-align:center;margin-top:6px;color:#6a5b48}
+.gal .w3{grid-column:span 3}.gal .w2{grid-column:span 2}.gal .w4{grid-column:span 4}
+
+/* ===== Info ===== */
+.info{background:var(--kinari-2)}
+.info-grid{display:grid;grid-template-columns:1.2fr 1fr;gap:40px}
+dl{margin:0}
+dl div{display:grid;grid-template-columns:100px 1fr;gap:14px;padding:12px 0;border-bottom:1px solid #c9b992}
+dt{font-weight:700;color:var(--shu);letter-spacing:.2em;font-size:13px}
+dd{margin:0}
+.cash{background:var(--shu);color:#fff;padding:26px;text-align:center}
+.cash .big{font-size:30px;letter-spacing:.2em;display:block;margin:4px 0 8px}
+.cash p{margin:6px 0;font-size:13.5px}
+.mapbtn{display:inline-block;margin-top:22px;background:var(--kura);color:var(--kinari);padding:14px 30px;text-decoration:none;letter-spacing:.12em;font-size:14px}
+.mapbtn:hover{background:var(--wood)}
+
+footer{background:var(--kura);color:#bdb5a2;padding:44px 0;font-size:12.5px;text-align:center}
+footer p{max-width:720px;margin:6px auto;padding:0 22px}
+footer a{color:var(--age)}
+
+@media (max-width:780px){
+  .hero{grid-template-columns:1fr;min-height:auto}
+  .hero-text{padding:48px 20px 80px}
+  .hero-photo{min-height:320px}
+  .stamp{left:20px;bottom:18px;width:64px;height:64px;font-size:34px}
+  .concept-grid,.mcols,.info-grid{grid-template-columns:1fr}
+  .gal{grid-template-columns:1fr 1fr}
+  .gal .w3,.gal .w2,.gal .w4{grid-column:span 2}
+  .menu-card{padding:22px 16px}
+  section{padding:60px 0}
+}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="hero-text namako">
+    <div class="vert mincho">
+      <h1>とんかつ蔵</h1>
+      <p>金沢・伏見新町<br>手書きの言葉に迎えられる<br>とんかつの店</p>
+    </div>
+    <div class="stamp mincho">蔵</div>
+  </div>
+  <div class="hero-photo">
+    <div class="hero-cta">
+      <a class="a" href="#menu">お品書き</a>
+      <a class="b" href="https://www.google.com/maps/search/?api=1&amp;query=%E7%9F%B3%E5%B7%9D%E7%9C%8C%E9%87%91%E6%B2%A2%E5%B8%82%E4%BC%8F%E8%A6%8B%E6%96%B0%E7%94%BA277-2" target="_blank" rel="noopener">Googleマップ</a>
+    </div>
+  </div>
+</header>
+
+<section>
+  <div class="wrap">
+    <div class="sec-title"><span class="small">CONCEPT</span><h2 class="mincho">お店のこと</h2></div>
+    <div class="concept-grid">
+      <img class="a" src="../../images/odekake/tonkatsu-kura-kanazawa/calligraphy1.jpg" alt="店内に飾られた手書きの書" loading="lazy">
+      <img class="b" src="../../images/odekake/tonkatsu-kura-kanazawa/calligraphy2.jpg" alt="手書きの書のアップ" loading="lazy">
+    </div>
+    <div class="concept-text">
+      <p>住宅街の一角、縦型の看板を目印にたどり着く「とんかつ蔵」。木の天井と和風の照明に包まれた店内には、力強い筆文字の言葉が掲げられています。</p>
+      <p>黒豚ひれ、ロース、ハンバーグ、えびふらい、和牛すてーき、名物のクリームコロッケまで。とんかつ専門店ならではの、幅広い洋食メニューが揃います。</p>
+      <div class="keys mincho"><span>筆文字</span><span>定食</span><span>住宅街の名店</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="menu namako" id="menu">
+  <div class="wrap">
+    <div class="sec-title"><span class="small">MENU</span><h2 class="mincho">お品書き</h2></div>
+    <div class="menu-card">
+      <figure class="menu-photo">
+        <img src="../../images/odekake/tonkatsu-kura-kanazawa/menu.jpg" alt="店内のメニュー" loading="lazy">
+        <figcaption>テーブルのメニューより</figcaption>
+      </figure>
+      <div class="mcols">
+        <div>
+          <h3 class="mhead mincho">とんかつ・かつ</h3>
+          <ul class="mlist">
+            <li><span class="n">黒豚ひれ</span><span class="y">¥2,200</span></li>
+            <li><span class="n">観音池ロース</span><span class="y">¥1,900</span></li>
+            <li><span class="n">LYB豚ロースかつ</span><span class="y">¥2,000</span></li>
+            <li><span class="n">庄屋さん</span><span class="y">¥1,600</span></li>
+            <li><span class="n">磯エ門<small>ロースかつを大根おろしで</small></span><span class="y">¥1,500</span></li>
+            <li><span class="n">大蔵どん</span><span class="y">¥1,700</span></li>
+            <li><span class="n">大判</span><span class="y">¥1,400</span></li>
+            <li><span class="n">香の助</span><span class="y">¥1,400</span></li>
+            <li><span class="n">一重小町</span><span class="y">¥1,400</span></li>
+            <li><span class="n">味そかつヒレ</span><span class="y">¥1,600</span></li>
+            <li><span class="n">味そかつロース</span><span class="y">¥1,500</span></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="mhead mincho">ハンバーグ・すてーき・その他</h3>
+          <ul class="mlist">
+            <li><span class="n">わらじハンバーグ</span><span class="y">¥1,700</span></li>
+            <li><span class="n">ぞうりハンバーグ</span><span class="y">¥1,400</span></li>
+            <li><span class="n">えびふらい</span><span class="y">¥2,800</span></li>
+            <li><span class="n">和牛すてーき</span><span class="y">¥2,900</span></li>
+            <li><span class="n">ころころすてーき</span><span class="y">¥2,200</span></li>
+            <li><span class="n">鳥兵衛</span><span class="y">¥1,400</span></li>
+            <li><span class="n">鳥唐揚</span><span class="y">¥1,400</span></li>
+            <li><span class="n">名物！クリームコロッケ</span><span class="y">¥800</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <p class="note">※価格は食べログ掲載の情報（税込・2026年10月時点）に基づきます。内容・価格は変更される場合があります。</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="sec-title"><span class="small">GALLERY</span><h2 class="mincho">ギャラリー</h2></div>
+    <div class="gal">
+      <figure class="w4"><img src="../../images/odekake/tonkatsu-kura-kanazawa/oroshi-closeup.jpg" alt="大根おろしののったロースかつ" loading="lazy"><figcaption>大根おろしののったロースかつ</figcaption></figure>
+      <figure class="w2"><img src="../../images/odekake/tonkatsu-kura-kanazawa/signboard.jpg" alt="看板" loading="lazy" style="object-position:center 25%"><figcaption>縦型の看板</figcaption></figure>
+      <figure class="w3"><img src="../../images/odekake/tonkatsu-kura-kanazawa/teishoku.jpg" alt="定食" loading="lazy"><figcaption>ごはん・お味噌汁つきの定食</figcaption></figure>
+      <figure class="w3"><img src="../../images/odekake/tonkatsu-kura-kanazawa/exterior.jpg" alt="外観" loading="lazy"><figcaption>住宅街にたたずむ外観</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section class="info">
+  <div class="wrap">
+    <div class="sec-title"><span class="small">SHOP INFORMATION</span><h2 class="mincho">店舗情報</h2></div>
+    <div class="info-grid">
+      <div>
+        <dl>
+          <div><dt>店名</dt><dd>とんかつ蔵</dd></div>
+          <div><dt>住所</dt><dd>石川県金沢市伏見新町277-2</dd></div>
+          <div><dt>電話</dt><dd><a href="tel:0762444511">076-244-4511</a></dd></div>
+          <div><dt>営業時間</dt><dd>11:30〜14:00（L.O.13:30）<br>17:00〜20:30（L.O.20:00）</dd></div>
+          <div><dt>定休日</dt><dd>月曜日・木曜日</dd></div>
+          <div><dt>席数</dt><dd>27席（カウンター9席・テーブル18席）</dd></div>
+          <div><dt>予約</dt><dd>可</dd></div>
+          <div><dt>アクセス</dt><dd>JR金沢駅8番乗り場から北鉄バス「泉丘高校前」下車、徒歩約8分</dd></div>
+        </dl>
+        <a class="mapbtn" href="https://www.google.com/maps/search/?api=1&amp;query=%E7%9F%B3%E5%B7%9D%E7%9C%8C%E9%87%91%E6%B2%A2%E5%B8%82%E4%BC%8F%E8%A6%8B%E6%96%B0%E7%94%BA277-2" target="_blank" rel="noopener">Googleマップを開く</a>
+      </div>
+      <div class="cash mincho">
+        <p>お支払いは</p>
+        <span class="big">現金のみ</span>
+        <p>カード・電子マネー・QRコード決済は<br>ご利用いただけません</p>
+        <p style="margin-top:16px;font-size:12px;opacity:.9">食べログ掲載情報：<a href="https://tabelog.com/ishikawa/A1701/A170101/17003232/" target="_blank" rel="noopener" style="text-decoration:underline">tabelog.com</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>このページは、お店に行ってきた個人（チワコギー工房）が作った<b>非公式のファンページ</b>です。お店とは関係ありません。</p>
+  <p>掲載している写真はすべて自分で撮影したものです。営業時間・メニュー・価格は変更される場合があります。最新情報は食べログやお店にご確認ください。</p>
+  <p><a href="../../odekake.html">← 行ってきた一覧へ</a></p>
+</footer>
+</body>
+</html>

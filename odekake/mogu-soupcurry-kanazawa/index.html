@@ -1,0 +1,268 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>スープカレー＆カフェ mogu（モグ）｜金沢市福増町のスープカレー専門店 ファンページ</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=BIZ+UDPGothic:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --night:#13161d;
+  --night-2:#1c212b;
+  --night-3:#262c38;
+  --curry:#f08a24;
+  --curry-deep:#c7650f;
+  --snow:#f6f2ea;
+  --mute:#a9a79f;
+  --lamp:#ffd27a;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--night);color:var(--snow);font-family:"BIZ UDPGothic","Hiragino Sans",sans-serif;line-height:1.85}
+img{max-width:100%;display:block}
+a{color:inherit}
+.display{font-family:"Dela Gothic One","BIZ UDPGothic",sans-serif;font-weight:400;letter-spacing:.02em}
+.wrap{max-width:1040px;margin:0 auto;padding:0 22px}
+
+/* ===== Hero：夜の外観フルスクリーン ===== */
+.hero{position:relative;min-height:min(100vh,780px);display:flex;align-items:flex-end;background:#000 url("../../images/odekake/mogu-soupcurry-kanazawa/exterior-night.jpg") center 35%/cover no-repeat;overflow:hidden}
+.hero::before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(19,22,29,.35) 0%,rgba(19,22,29,.1) 35%,rgba(19,22,29,.92) 100%)}
+.hero-inner{position:relative;padding:0 22px 64px;max-width:1040px;margin:0 auto;width:100%}
+.tag{display:inline-block;border:1px solid var(--lamp);color:var(--lamp);padding:3px 14px;border-radius:2px;font-size:12px;letter-spacing:.25em}
+.hero h1{font-size:clamp(40px,10vw,104px);line-height:1.02;margin:16px 0 8px;color:var(--snow);text-shadow:0 4px 30px rgba(0,0,0,.6)}
+.hero h1 em{font-style:normal;color:var(--curry)}
+.hero .sub{font-size:clamp(14px,2.2vw,18px);color:#e8e2d4;max-width:560px;margin:0 0 26px}
+.cta{display:flex;gap:12px;flex-wrap:wrap}
+.btn{display:inline-block;text-decoration:none;padding:13px 28px;border-radius:2px;font-size:14px;letter-spacing:.08em;border:1px solid var(--curry)}
+.btn.fill{background:var(--curry);color:#1b1206;font-weight:700}
+.btn.fill:hover{background:var(--lamp)}
+.btn.line{color:var(--curry)}
+.btn.line:hover{background:rgba(240,138,36,.12)}
+.scroll-hint{position:absolute;right:22px;bottom:22px;writing-mode:vertical-rl;font-size:11px;letter-spacing:.4em;color:var(--mute)}
+
+/* ===== Section ===== */
+section{padding:84px 0;position:relative}
+.sec-head{display:flex;align-items:baseline;gap:18px;margin-bottom:34px;flex-wrap:wrap}
+.sec-head .no{font-family:"Dela Gothic One",sans-serif;font-size:56px;line-height:1;color:var(--curry);opacity:.9}
+.sec-head h2{margin:0;font-size:clamp(24px,4.4vw,36px)}
+.sec-head .en{font-size:12px;letter-spacing:.3em;color:var(--mute);width:100%}
+
+/* ===== Concept ===== */
+.concept{background:var(--night-2)}
+.concept-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center}
+.concept p{margin:0 0 16px;color:#dcd7ca}
+.words{display:flex;gap:10px;flex-wrap:wrap;margin-top:22px}
+.words span{border:1px solid var(--curry);color:var(--curry);padding:6px 18px;border-radius:999px;font-size:14px}
+.concept figure{margin:0;position:relative}
+.concept figure img{width:100%;aspect-ratio:3/4;object-fit:cover;border-radius:4px}
+.concept figure::after{content:"";position:absolute;inset:14px -14px -14px 14px;border:1px solid var(--curry);border-radius:4px;z-index:-1}
+
+/* ===== Menu：チケット風 ===== */
+.menu-block{margin-bottom:46px}
+.menu-block h3{font-size:18px;margin:0 0 14px;padding-bottom:10px;border-bottom:2px solid var(--curry);display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:8px}
+.menu-block h3 small{font-family:"BIZ UDPGothic",sans-serif;font-size:12px;color:var(--mute);letter-spacing:.05em}
+.menu-list{list-style:none;margin:0;padding:0}
+.menu-list li{display:flex;align-items:baseline;gap:10px;padding:11px 0}
+.menu-list .name{flex:0 1 auto}
+.menu-list .dots{flex:1;border-bottom:2px dotted #4a5262;transform:translateY(-4px);min-width:20px}
+.menu-list .yen{font-family:"Dela Gothic One",sans-serif;color:var(--lamp);white-space:nowrap}
+.menu-list .note{display:block;font-size:12px;color:var(--mute);margin-top:2px}
+.set-card{display:grid;grid-template-columns:1fr 1fr;background:var(--night-3);border-radius:6px;overflow:hidden;margin-bottom:26px}
+.set-card img{width:100%;height:100%;object-fit:cover;min-height:260px}
+.set-card .body{padding:28px}
+.set-card .label{font-size:11px;letter-spacing:.3em;color:var(--curry)}
+.set-card h4{font-size:24px;margin:8px 0 6px}
+.set-card .price{font-family:"Dela Gothic One",sans-serif;font-size:32px;color:var(--lamp)}
+.set-card .price small{font-size:12px;font-family:"BIZ UDPGothic",sans-serif;color:var(--mute)}
+.set-card p{font-size:14px;color:#d4cfc2;margin:10px 0 0}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:0 48px}
+.fine{font-size:12px;color:var(--mute)}
+
+/* ===== Smartphone order ===== */
+.order{background:var(--night-2)}
+.order-grid{display:grid;grid-template-columns:260px 1fr;gap:44px;align-items:center}
+.phone{border:8px solid #0b0d11;border-radius:30px;overflow:hidden;box-shadow:0 20px 60px rgba(0,0,0,.5);max-width:260px;margin:0 auto}
+.phone img{width:100%}
+.steps{list-style:none;margin:0;padding:0;counter-reset:s}
+.steps li{counter-increment:s;position:relative;padding:12px 0 12px 56px;border-bottom:1px solid #2f3645}
+.steps li::before{content:counter(s);position:absolute;left:0;top:10px;width:38px;height:38px;border-radius:50%;background:var(--curry);color:#1b1206;font-family:"Dela Gothic One",sans-serif;display:grid;place-items:center}
+.steps b{display:block}
+.steps span{font-size:13px;color:var(--mute)}
+
+/* ===== Gallery：横スクロール ===== */
+.gallery{padding-bottom:70px}
+.rail{display:flex;gap:16px;overflow-x:auto;scroll-snap-type:x mandatory;padding:0 22px 18px;-webkit-overflow-scrolling:touch}
+.rail figure{flex:0 0 min(78vw,520px);margin:0;scroll-snap-align:center}
+.rail img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:4px}
+.rail figcaption{font-size:12.5px;color:var(--mute);margin-top:8px}
+.rail::-webkit-scrollbar{height:6px}
+.rail::-webkit-scrollbar-thumb{background:var(--curry-deep);border-radius:3px}
+
+/* ===== Info ===== */
+.info{background:var(--night-2)}
+.info-grid{display:grid;grid-template-columns:1fr 1fr;gap:44px}
+dl.spec{margin:0}
+dl.spec div{display:grid;grid-template-columns:110px 1fr;gap:14px;padding:13px 0;border-bottom:1px solid #2f3645}
+dl.spec dt{color:var(--curry);font-size:13px;letter-spacing:.1em}
+dl.spec dd{margin:0}
+.hours{background:var(--night-3);border-radius:6px;padding:26px}
+.hours h3{margin:0 0 12px;font-size:20px}
+.hours p{margin:6px 0}
+.hours .big{font-family:"Dela Gothic One",sans-serif;font-size:24px;color:var(--lamp)}
+
+footer{background:#0c0e12;padding:44px 0;font-size:12.5px;color:var(--mute);text-align:center}
+footer p{max-width:720px;margin:6px auto;padding:0 22px}
+footer a{color:var(--curry)}
+
+@media (max-width:760px){
+  .concept-grid,.order-grid,.info-grid,.two,.set-card{grid-template-columns:1fr}
+  .concept figure::after{display:none}
+  .sec-head .no{font-size:42px}
+  section{padding:60px 0}
+  .hero-inner{padding-bottom:48px}
+  .scroll-hint{display:none}
+}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="hero-inner">
+    <span class="tag">SOUP CURRY &amp; CAFE ・ KANAZAWA</span>
+    <h1 class="display">スープ<em>カレー</em><br>＆カフェ mogu</h1>
+    <p class="sub">北海道仕込みのスープカレーを、金沢・福増町の夜のあかりの下で。ランチもディナーも、テイクアウトも。</p>
+    <div class="cta">
+      <a class="btn fill" href="#menu">お品書きを見る</a>
+      <a class="btn line" href="https://www.google.com/maps/search/?api=1&amp;query=%E7%9F%B3%E5%B7%9D%E7%9C%8C%E9%87%91%E6%B2%A2%E5%B8%82%E7%A6%8F%E5%A2%97%E7%94%BA%E5%8D%971285-1" target="_blank" rel="noopener">Googleマップで見る</a>
+    </div>
+  </div>
+  <div class="scroll-hint">SCROLL</div>
+</header>
+
+<section class="concept">
+  <div class="wrap">
+    <div class="sec-head"><span class="no">01</span><h2 class="display">コンセプト</h2><span class="en">CONCEPT</span></div>
+    <div class="concept-grid">
+      <div>
+        <p>スープカレーの本場・北海道の味をベースに、具材の存在感とスパイスの香りを楽しめる一皿を。金沢市福増町の「スープカレー＆カフェ mogu」は、木のぬくもりを感じる落ち着いた空間で、じっくり味わう専門店です。</p>
+        <p>やわらかなチキンやポーク、季節の野菜、こんがりチーズ、とろとろ半熟卵。定番のラインナップに加えて、夜はディナー限定のメニューも用意されています。</p>
+        <div class="words"><span>北海道仕込み</span><span>スパイスの香り</span><span>夜のあかり</span></div>
+      </div>
+      <figure><img src="../../images/odekake/mogu-soupcurry-kanazawa/logo-wall.jpg" alt="入口の壁に飾られたmoguのロゴ" loading="lazy"></figure>
+    </div>
+  </div>
+</section>
+
+<section id="menu">
+  <div class="wrap">
+    <div class="sec-head"><span class="no">02</span><h2 class="display">お品書き</h2><span class="en">MENU ／ すべて税込</span></div>
+
+    <div class="set-card">
+      <img src="../../images/odekake/mogu-soupcurry-kanazawa/curry-set.jpg" alt="スープカレーセット" loading="lazy">
+      <div class="body">
+        <span class="label">SET MENU</span>
+        <h4 class="display">スープカレーセット</h4>
+        <div class="price">¥1,850 <small>税込</small></div>
+        <p>スープカレー（ライス付）＋お好きなドリンク＋サラダ。ドリンクなし・サラダなしは各150円引き。</p>
+        <p class="fine">セットで選べるのは、やわらかチキン／野菜／やわらかポーク（＋150円）／こんがりチーズ／とろとろ半熟卵。</p>
+      </div>
+    </div>
+
+    <div class="menu-block">
+      <h3 class="display">グランドメニュー <small>スープカレー</small></h3>
+      <ul class="menu-list">
+        <li><span class="name">チキンと野菜のスープカレー</span><span class="dots"></span><span class="yen">¥1,600</span></li>
+        <li><span class="name">焦がしチーズとこんがりベーコンのスープカレー</span><span class="dots"></span><span class="yen">¥1,600</span></li>
+        <li><span class="name">やわらかポークのスープカレー</span><span class="dots"></span><span class="yen">¥1,700</span></li>
+        <li><span class="name">季節の7種の野菜スープカレー</span><span class="dots"></span><span class="yen">¥1,500</span></li>
+        <li><span class="name">やわらかチキンのスープカレー</span><span class="dots"></span><span class="yen">¥1,500</span></li>
+        <li><span class="name">こんがりチーズのスープカレー</span><span class="dots"></span><span class="yen">¥1,400</span></li>
+        <li><span class="name">とろとろ半熟卵のスープカレー</span><span class="dots"></span><span class="yen">¥1,400</span></li>
+      </ul>
+    </div>
+
+    <div class="two">
+      <div class="menu-block">
+        <h3 class="display">ディナー限定 <small>17:30〜</small></h3>
+        <ul class="menu-list">
+          <li><span class="name">こんがりチーズとウィンナーのスープカレー</span><span class="dots"></span><span class="yen">¥1,550</span></li>
+          <li><span class="name">キーマ納豆のスープカレー</span><span class="dots"></span><span class="yen">¥1,500</span></li>
+        </ul>
+        <h3 class="display" style="margin-top:34px">キッズカレー <small>小学生以下</small></h3>
+        <ul class="menu-list">
+          <li><span class="name">キッズカレー<span class="note">ひき肉のスープカレー（ハーフ）＋りんごジュース</span></span><span class="dots"></span><span class="yen">¥900</span></li>
+        </ul>
+      </div>
+      <div class="menu-block">
+        <h3 class="display">ドリンク <small>店内飲食のみ</small></h3>
+        <ul class="menu-list">
+          <li><span class="name">自家製ラッシー<span class="note">プレーン／マンゴー／もも／パイナップル</span></span><span class="dots"></span><span class="yen">¥450</span></li>
+          <li><span class="name">ソフトドリンク<span class="note">コーヒー（ホット・アイス）／りんご／マンゴー／コーラ ほか</span></span><span class="dots"></span><span class="yen">¥400</span></li>
+          <li><span class="name">アサヒスーパードライ（小瓶）</span><span class="dots"></span><span class="yen">¥500</span></li>
+        </ul>
+      </div>
+    </div>
+    <p class="fine">※メニュー・価格はお店の公式サイト掲載内容（2026年10月時点）に基づきます。販売期間が限定されたメニューもあります。最新情報は公式サイトでご確認ください。</p>
+  </div>
+</section>
+
+<section class="order">
+  <div class="wrap">
+    <div class="sec-head"><span class="no">03</span><h2 class="display">ご注文はスマホから</h2><span class="en">ORDER BY SMARTPHONE</span></div>
+    <div class="order-grid">
+      <div class="phone"><img src="../../images/odekake/mogu-soupcurry-kanazawa/order-screen.jpg" alt="スマホの注文画面" loading="lazy"></div>
+      <ol class="steps">
+        <li><b>席に着いたら、テーブルのQRコードを読み取る</b><span>テーブルの案内シートから、注文ページへ進みます。</span></li>
+        <li><b>スープカレーを写真付きで選ぶ</b><span>「写真と説明を見る」で、カレーの中身を確認できます。</span></li>
+        <li><b>セットか単品かを選ぶ</b><span>サラダの有無、ドリンクを持ってくるタイミングなども画面で選択。</span></li>
+        <li><b>注文はテーブルの代表者の携帯から送信</b><span>グループの場合は、代表の方がまとめて注文します。</span></li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<section class="gallery">
+  <div class="wrap"><div class="sec-head"><span class="no">04</span><h2 class="display">ギャラリー</h2><span class="en">GALLERY</span></div></div>
+  <div class="rail">
+    <figure><img src="../../images/odekake/mogu-soupcurry-kanazawa/exterior-door.jpg" alt="入口" loading="lazy"><figcaption>OPENの看板が灯る入口</figcaption></figure>
+    <figure><img src="../../images/odekake/mogu-soupcurry-kanazawa/signboard.jpg" alt="スープカレーの看板" loading="lazy"><figcaption>夜に光る「スープカレー」の看板</figcaption></figure>
+    <figure><img src="../../images/odekake/mogu-soupcurry-kanazawa/curry-closeup.jpg" alt="スープカレー" loading="lazy"><figcaption>具だくさんのスープカレー</figcaption></figure>
+    <figure><img src="../../images/odekake/mogu-soupcurry-kanazawa/salad.jpg" alt="サラダ" loading="lazy"><figcaption>セットのサラダ</figcaption></figure>
+    <figure><img src="../../images/odekake/mogu-soupcurry-kanazawa/interior-shelf.jpg" alt="木の棚のある店内" loading="lazy"><figcaption>木の棚が印象的な店内</figcaption></figure>
+    <figure><img src="../../images/odekake/mogu-soupcurry-kanazawa/interior-sofa.jpg" alt="ソファ席" loading="lazy"><figcaption>ゆったりしたソファ席</figcaption></figure>
+  </div>
+</section>
+
+<section class="info">
+  <div class="wrap">
+    <div class="sec-head"><span class="no">05</span><h2 class="display">店舗情報</h2><span class="en">SHOP INFORMATION</span></div>
+    <div class="info-grid">
+      <dl class="spec">
+        <div><dt>店名</dt><dd>スープカレー＆カフェ mogu（モグ）</dd></div>
+        <div><dt>住所</dt><dd>石川県金沢市福増町南1285-1<br>グリーンエイト1階</dd></div>
+        <div><dt>電話</dt><dd><a href="tel:08037421285">080-3742-1285</a></dd></div>
+        <div><dt>駐車場</dt><dd>11台</dd></div>
+        <div><dt>席の予約</dt><dd>受付していません</dd></div>
+        <div><dt>公式サイト</dt><dd><a href="https://mogu-soupcurry.pages.dev/" target="_blank" rel="noopener">mogu-soupcurry.pages.dev</a></dd></div>
+      </dl>
+      <div class="hours">
+        <h3 class="display">営業時間</h3>
+        <p><b>ランチ</b><br><span class="big">11:00〜15:00</span> <span class="fine">（L.O.14:35）</span></p>
+        <p><b>ディナー</b><br><span class="big">17:30〜21:30</span> <span class="fine">（L.O.21:00）</span></p>
+        <p class="fine">月・火曜日はディナーお休み（祝日の場合は夜も営業）。営業日はお店のカレンダーで確認できます。</p>
+        <p style="margin-top:20px"><a class="btn fill" href="https://www.google.com/maps/search/?api=1&amp;query=%E7%9F%B3%E5%B7%9D%E7%9C%8C%E9%87%91%E6%B2%A2%E5%B8%82%E7%A6%8F%E5%A2%97%E7%94%BA%E5%8D%971285-1" target="_blank" rel="noopener">Googleマップを開く</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>このページは、お店に行ってきた個人（チワコギー工房）が作った<b>非公式のファンページ</b>です。お店とは関係ありません。</p>
+  <p>掲載している写真はすべて自分で撮影したものです。営業時間・メニュー・価格は変更される場合があるため、最新情報はお店の公式サイトでご確認ください。</p>
+  <p><a href="../../odekake.html">← 行ってきた一覧へ</a></p>
+</footer>
+</body>
+</html>
