@@ -1,6 +1,18 @@
 [
   {
     "date": "2026-11-04",
+    "icon": "📱",
+    "text": "楽曲ページに「ショート動画」タブを新設（全19本）",
+    "url": "music.html"
+  },
+  {
+    "date": "2026-11-04",
+    "icon": "🎤",
+    "text": "10月18日以降の新曲・BGM 14本をまとめて掲載",
+    "url": "music.html"
+  },
+  {
+    "date": "2026-11-04",
     "icon": "🎤",
     "text": "新曲「Chasing the Northern Star」公開",
     "url": "https://youtu.be/X_w0AA3PZSU"
